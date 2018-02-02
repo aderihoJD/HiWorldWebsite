@@ -1,0 +1,78 @@
+header {
+  background: url("../../img/Header.png") center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  img.logo {
+    position: absolute;
+    width: 33px;
+    top: 41px;
+    left: 60px;
+  }
+  nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-flow: row nowrap;
+      margin-top: 52px;
+      margin-right: 65px;
+      li {
+        justify-content: space-around;
+        margin: 0 23px;
+        a {
+          color: white;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  div.content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    h1 {
+      color: #fff;
+      font-size: 120px;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 300;
+      letter-spacing: 5px;
+      margin-top: 45px;
+    }
+    p {
+      color: #fff;
+      font-size: 25px;
+      text-align: center;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+    }
+    a.contact {
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      border: 1px solid #33c;
+      background: #33c;
+      padding: 35px;
+      border-radius: 50px;
+      width: 610px;
+      font-size: 25px;
+      margin-bottom: 140px;
+    }
+    img.arrow {
+      width: 100px;
+      margin-bottom: 200px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

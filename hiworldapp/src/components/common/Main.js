@@ -1,11 +1,11 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom';
 
-import Home from './Home';
-import Price from './Price';
-import NotFound from './NotFound';
+import Home from '../home/Home';
+import Price from '../price/Price';
+import NotFound from '../error/NotFound';
 
-const App = () => <div>
+const Main = () => <div>
     <Switch>
         <Route exact path={'/'} component={Home}/>
         <Route path={'/price'} component={Price}/>
@@ -13,4 +13,4 @@ const App = () => <div>
     </Switch>
 </div>
 
-export default App
+export default Main

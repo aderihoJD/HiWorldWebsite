@@ -1,0 +1,20 @@
+html, body, ul, li, a, img, h1, div, span, p {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track-piece  {
+    background-color: #C2D2E4;
+}
+
+::-webkit-scrollbar-thumb{
+    border-width:1px 1px 1px 2px;
+    border-color: #0A4C95;
+    background-color: #0A4C95;
+}

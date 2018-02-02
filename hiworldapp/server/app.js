@@ -2,6 +2,8 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 
+import sendMail from './mailer';
+
 const app = express();
 
 const port = 3001;
@@ -24,6 +26,8 @@ app.post('/call', (req, res) => {
     console.log(req.body);
     res.send('Yes');
 });
+
+app.post('/message', sendMail);
 
 app.listen(port, () => console.log(`Server was started on port: ${port}`));
 
