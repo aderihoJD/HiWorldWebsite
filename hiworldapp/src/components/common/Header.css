@@ -226,3 +226,13 @@ header.priceStyle div.content div.wrapper div.block input[type=range]::-ms-track
   border-color: transparent;
   color: transparent;
 }
+header.priceStyle div.content div.wrapper div.block div.rangeLabels {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 371px;
+  color: grey;
+  font-size: 18px;
+  padding-top: 15px;
+}

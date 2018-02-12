@@ -56,7 +56,13 @@ class Header extends React.Component {
                                     <p className={"sText"}>Design & Development</p>
                                 </div>
                             </div>
-                            <input type={"range"} min={"1"} max={"3"} defaultValue={this.state.firstInput} step={"1"} onChange={value => this.setState({firstInput: value})}/>
+                            <input type={"range"} min={"1"} max={"3"} defaultValue={this.state.firstInput} step={"1"}
+                                   onChange={value => this.setState({firstInput: value})}/>
+                            <div className={"rangeLabels"}>
+                                <p>Small</p>
+                                <p>Average</p>
+                                <p>Big</p>
+                            </div>
                         </div>
                         <div className={"block block-second"}>
                             <div className={"blockContent"}>
@@ -66,7 +72,13 @@ class Header extends React.Component {
                                     <p className={"sText"}>Design & Development</p>
                                 </div>
                             </div>
-                            <input type={"range"} min={"1"} max={"3"} defaultValue={this.state.secondInput} step={"1"} onChange={value => this.setState({secondInput: value})}/>
+                            <input type={"range"} min={"1"} max={"3"} defaultValue={this.state.secondInput} step={"1"}
+                                   onChange={value => this.setState({secondInput: value})}/>
+                            <div className={"rangeLabels"}>
+                                <p>Small</p>
+                                <p>Average</p>
+                                <p>Big</p>
+                            </div>
                         </div>
                         <div className={"block block-third"}>
                             <div className={"blockContent"}>
@@ -76,7 +88,13 @@ class Header extends React.Component {
                                     <p className={"sText"}>Design & Development</p>
                                 </div>
                             </div>
-                            <input type={"range"} min={"1"} max={"3"} defaultValue={this.state.thirdInput} step={"1"} onChange={value => this.setState({thirdInput: value})}/>
+                            <input type={"range"} min={"1"} max={"3"} defaultValue={this.state.thirdInput} step={"1"}
+                                   onChange={value => this.setState({thirdInput: value})}/>
+                            <div className={"rangeLabels"}>
+                                <p>Small</p>
+                                <p>Average</p>
+                                <p>Big</p>
+                            </div>
                         </div>
                     </div>
                     <p className={'additionalBlocks'}>Design Features</p>

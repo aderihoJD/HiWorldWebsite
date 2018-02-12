@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4ccdb24-b45c-4fcf-928c-312f32edf745" name="Default" comment="price page template" />
+    <list default="true" id="b4ccdb24-b45c-4fcf-928c-312f32edf745" name="Default" comment="price page template">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hiworldapp/src/components/common/Header.css" afterPath="$PROJECT_DIR$/hiworldapp/src/components/common/Header.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hiworldapp/src/components/common/Header.css.map" afterPath="$PROJECT_DIR$/hiworldapp/src/components/common/Header.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hiworldapp/src/components/common/Header.js" afterPath="$PROJECT_DIR$/hiworldapp/src/components/common/Header.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hiworldapp/src/components/common/Header.less" afterPath="$PROJECT_DIR$/hiworldapp/src/components/common/Header.less" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -52,6 +58,7 @@
         <option value="$PROJECT_DIR$/hiworldapp/package.json" />
         <option value="$PROJECT_DIR$/hiworldapp/src/index.js" />
         <option value="$PROJECT_DIR$/hiworldapp/src/components/App.js" />
+        <option value="$PROJECT_DIR$/hiworldapp/README.md" />
         <option value="$PROJECT_DIR$/hiworldapp/src/components/common/Header.js" />
         <option value="$PROJECT_DIR$/hiworldapp/src/components/common/Header.less" />
       </list>
@@ -99,6 +106,27 @@
               <item name="HiWorld" type="b2602c69:ProjectViewProjectNode" />
               <item name="HiWorld" type="462c0819:PsiDirectoryNode" />
               <item name="hiworldapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HiWorld" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiWorld" type="462c0819:PsiDirectoryNode" />
+              <item name="hiworldapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HiWorld" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiWorld" type="462c0819:PsiDirectoryNode" />
+              <item name="hiworldapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HiWorld" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiWorld" type="462c0819:PsiDirectoryNode" />
+              <item name="hiworldapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -160,7 +188,7 @@
       <workItem from="1517843851702" duration="2149000" />
       <workItem from="1517903550417" duration="1819000" />
       <workItem from="1518161436444" duration="12014000" />
-      <workItem from="1518445839097" duration="7125000" />
+      <workItem from="1518445839097" duration="8246000" />
     </task>
     <task id="LOCAL-00001" summary="init commit with new architecture">
       <created>1517502257948</created>
@@ -194,19 +222,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48157000" />
+    <option name="totallyTimeSpent" value="49278000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1557377" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1557377" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3300866" sideWeight="0.510929" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3300866" sideWeight="0.48907104" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2608225" sideWeight="0.48907104" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -255,20 +282,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hiworldapp/src/components/common/Contact.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hiworldapp/src/components/error/NotFound.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hiworldapp/server/mailer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -548,14 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hiworldapp/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hiworldapp/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -595,7 +600,7 @@
         <state relative-caret-position="196">
           <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -608,20 +613,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hiworldapp/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hiworldapp/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="144">
+            <caret line="125" column="0" lean-forward="true" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+            <folding>
+              <marker date="1517490253165" expanded="true" signature="13357:13385" ph="{...}" />
+              <marker date="1517490253165" expanded="true" signature="22469:22766" ph="{...}" />
+              <marker date="1517490253165" expanded="true" signature="22493:22643" ph="{...}" />
+              <marker date="1517490253165" expanded="true" signature="22548:22580" ph="{...}" />
+              <marker date="1517490253165" expanded="true" signature="22602:22637" ph="{...}" />
+              <marker date="1517490253165" expanded="true" signature="22657:22764" ph="{...}" />
+              <marker date="1517490253165" expanded="true" signature="22678:22753" ph="&lt;div/&gt;" />
+              <marker date="1517490253165" expanded="true" signature="25193:25259" ph="{...}" />
+              <marker date="1517490253165" expanded="true" signature="25292:25579" ph="{...}" />
+              <marker date="1517490253165" expanded="true" signature="31091:31141" ph="..." />
+              <marker date="1517490253165" expanded="true" signature="31248:31335" ph="{...}" />
+              <marker date="1517490253165" expanded="true" signature="65557:65635" ph="..." />
+              <marker date="1517490253165" expanded="true" signature="65674:65755" ph="{...}" />
+              <marker date="1517490253165" expanded="true" signature="67428:67506" ph="..." />
+              <marker date="1517490253165" expanded="true" signature="67545:67568" ph="{...}" />
+              <marker date="1517490253165" expanded="true" signature="68479:68557" ph="..." />
+              <marker date="1517490253165" expanded="true" signature="68595:68785" ph="{...}" />
+              <marker date="1517490253165" expanded="true" signature="92403:92467" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hiworldapp/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hiworldapp/src/components/common/Header.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-792">
-          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="295">
+          <caret line="64" column="34" lean-forward="false" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hiworldapp/src/components/common/Header.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="165" column="28" lean-forward="false" selection-start-line="165" selection-start-column="28" selection-end-line="165" selection-end-column="28" />
+        <state relative-caret-position="397">
+          <caret line="263" column="0" lean-forward="true" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
           <folding />
         </state>
       </provider>
