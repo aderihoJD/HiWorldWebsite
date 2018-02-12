@@ -1,0 +1,36 @@
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px;
+  background: #211f21;
+  border-top: 1px solid #4c4c4c;
+  height: 50px;
+  color: #595759;
+}
+footer nav {
+  width: 20%;
+}
+footer nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  list-style-type: none;
+}
+footer nav ul li a {
+  text-decoration: none;
+  color: #595759;
+}
+footer div {
+  width: 40px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+footer div a {
+  color: blue;
+}
+footer div a:hover {
+  cursor: pointer;
+}
