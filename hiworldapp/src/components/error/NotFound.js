@@ -1,5 +1,6 @@
 import React from 'react';
+import './NotFound.css';
 
-const NotFound = () => <h1>Error 404</h1>
+const NotFound = () => <div></div>
 
 export default NotFound

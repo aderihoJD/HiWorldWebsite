@@ -7,11 +7,22 @@ import Footer from './common/Footer';
 
 import './App.css';
 
-const App = () => <div>
-    <Header/>
-    <Main/>
-    <Contact/>
-    <Footer/>
-</div>
+class App extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {fPath: props.history.location.pathname};
+    }
+
+    render(){
+        return (<div>
+            <Header path={this.state.fPath}/>
+            <Main/>
+            <Contact/>
+            <Footer/>
+        </div>)
+    }
+
+}
+
 
 export default App

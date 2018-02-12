@@ -4,16 +4,16 @@ export default (req, res, next) => {
 
     console.log('Mailer');
 
-    let transporter = nodemailer.createTransport('smtps://aderihoilya%40gmail.com:Aderiho1@smtp.gmail.com');
+    let transporter = nodemailer.createTransport('smtps://hi.world.ltd%40gmail.com:3841109done2018@smtp.gmail.com');
 
     let mailOptions = {
-        to: 'aderihoilya@gmail.com',
+        to: 'hi.world.ltd@gmail.com',
         subject: 'Order',
         text: `
         Name: ${req.body.name} \u000A 
         Email: ${req.body.email} \u000A
         Phone: ${req.body.phone} \u000A
-        Message: ${req.body.phone}`
+        Message: ${req.body.message}`
     };
 
     transporter.sendMail(mailOptions, (err, info) => {
