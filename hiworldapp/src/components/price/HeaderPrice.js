@@ -39,7 +39,7 @@ class HeaderPrice extends React.Component {
                                    onChange={value => this.setState({firstInput: value})}/>
                             <div className={"rangeLabels"}>
                                 <p>Small</p>
-                                <p>Average</p>
+                                <p>Average<br/>Size of project</p>
                                 <p>Big</p>
                             </div>
                         </div>
@@ -55,7 +55,7 @@ class HeaderPrice extends React.Component {
                                    onChange={value => this.setState({secondInput: value})}/>
                             <div className={"rangeLabels"}>
                                 <p>Small</p>
-                                <p>Average</p>
+                                <p>Average<br/>Size of project</p>
                                 <p>Big</p>
                             </div>
                         </div>
@@ -71,7 +71,7 @@ class HeaderPrice extends React.Component {
                                    onChange={value => this.setState({thirdInput: value})}/>
                             <div className={"rangeLabels"}>
                                 <p>Small</p>
-                                <p>Average</p>
+                                <p>Average<br/>Size of project</p>
                                 <p>Big</p>
                             </div>
                         </div>
