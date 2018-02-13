@@ -1,37 +1,16 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-// import {HashLink} from 'react-router-hash-link';
+import {HashLink} from 'react-router-hash-link';
 
-import './Header.css';
+import './HeaderPrice.css';
 
-class Header extends React.Component {
+class HeaderPrice extends React.Component {
     constructor(props) {
         super(props);
         console.log(props);
         this.state = {firstInput: '2', secondInput: '2', thirdInput: '2'};
     }
 
-    // render(){
-    //     return (
-    //         <header className={"indexStyle"}>
-    //             <img src="images/logo.png" alt={'logo'} className="logo"/>
-    //             <nav>
-    //                 <ul>
-    //                     <li><Link to='/'>Work</Link></li>
-    //                     <li><Link to='/#services'>About</Link></li>
-    //                     <li><Link to='/price'>Price</Link></li>
-    //                     <li><Link to='/#contactUs'>Contact</Link></li>
-    //                 </ul>
-    //             </nav>
-    //             <div className="content">
-    //                 <h1>design &<br/> development</h1>
-    //                 <p>Hi-World studio. We are Tel Aviv based hi-tech startup,<br/>specialized in design and software development</p>
-    //                 <a className="contact" href='/'>Contact us</a>
-    //                 <img src="images/arrow.png" alt={'arrow'} className="arrow"/>
-    //             </div>
-    //         </header>
-    //     )
-    // }
 
     render() {
         return (
@@ -40,9 +19,9 @@ class Header extends React.Component {
                 <nav>
                     <ul>
                         <li><Link to='/'>Work</Link></li>
-                        <li><Link to='/#services'>About</Link></li>
+                        <li><HashLink to='/#services'>About</HashLink></li>
                         <li><Link to='/price'>Price</Link></li>
-                        <li><Link to='/#contactUs'>Contact</Link></li>
+                        <li><HashLink to='/#contactUs'>Contact</HashLink></li>
                     </ul>
                 </nav>
                 <div className="content">
@@ -105,4 +84,4 @@ class Header extends React.Component {
     }
 }
 
-export default Header;
+export default HeaderPrice;

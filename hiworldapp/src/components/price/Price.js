@@ -1,13 +1,12 @@
 import React from 'react';
 
-class Price extends React.Component {
+import HeaderPrice from './HeaderPrice';
+import Contact from '../common/Contact';
 
+const Price = () => <div>
+    <HeaderPrice/>
+    <Contact/>
+</div>
 
-    render() {
-        return (
-            <div/>
-        );
-    }
-}
 
 export default Price
