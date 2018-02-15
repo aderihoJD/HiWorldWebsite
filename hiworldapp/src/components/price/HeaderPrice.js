@@ -8,7 +8,7 @@ class HeaderPrice extends React.Component {
     constructor(props) {
         super(props);
         console.log(props);
-        this.state = {firstInput: '2', secondInput: '2', thirdInput: '2', finalPrice: ''};
+        this.state = {firstInput: '2', secondInput: '2', thirdInput: '2', finalPrice: '', isFirstActive: false, isSecondActive: false, isThirdActive: false};
         this.firstBlockActive = this.firstBlockActive.bind(this);
         this.secondBlockActive = this.secondBlockActive.bind(this);
         this.thirdBlockActive = this.thirdBlockActive.bind(this);
@@ -20,53 +20,94 @@ class HeaderPrice extends React.Component {
 
     firstInputChange(value) {
         this.setState({firstInput: value});
-        this.firstBlockActive();
+        this.setState({finalPrice: this.getInputValue(this.firstBlockInput)});
     }
 
     secondInputChange(value) {
         this.setState({secondInput: value});
-        this.secondBlockActive();
+        this.setState({finalPrice: this.getInputValue(this.secondBlockInput)});
     }
 
     thirdInputChange(value) {
         this.setState({thirdInput: value});
-        this.thirdBlockActive();
+        this.setState({finalPrice: this.getInputValue(this.thirdBlockInput)});
     }
 
     firstBlockActive() {
-        this.firstBlock.className = "blockContent-activeBlock";
         this.secondBlock.className = "blockContent";
         this.thirdBlock.className = "blockContent";
-        this.firstBlockInput.disabled = false;
-        this.secondBlockInput.disabled = true;
-        this.thirdBlockInput.disabled = true;
-        this.setState({finalPrice: this.getInputValue(this.firstBlockInput)});
-        this.setState({secondInput: '2'});
-        this.setState({thirdInput: '2'});
+        this.setState({isFirstActive: !this.state.isFirstActive}, () => console.log(`First: ${this.state.isFirstActive}`));
+        // this.setState(prevState => ({
+        //     isFirstActive: !prevState.isFirstActive
+        // }));
+        if (this.state.isFirstActive !== true) {
+            this.firstBlock.className = "blockContent-activeBlock";
+            this.firstBlockInput.disabled = false;
+            this.secondBlockInput.disabled = true;
+            this.thirdBlockInput.disabled = true;
+            this.setState({finalPrice: this.getInputValue(this.firstBlockInput)});
+            this.setState({secondInput: '2'});
+            this.setState({thirdInput: '2'});
+        } else {
+            this.firstBlock.className = "blockContent";
+            this.setState({finalPrice: '0'});
+            this.setState({firstInput: '2'});
+            this.firstBlockInput.disabled = true;
+            this.secondBlockInput.disabled = true;
+            this.thirdBlockInput.disabled = true;
+        }
     }
 
     secondBlockActive() {
         this.firstBlock.className = "blockContent";
-        this.secondBlock.className = "blockContent-activeBlock";
         this.thirdBlock.className = "blockContent";
-        this.firstBlockInput.disabled = true;
-        this.secondBlockInput.disabled = false;
-        this.thirdBlockInput.disabled = true;
-        this.setState({finalPrice: this.getInputValue(this.secondBlockInput)});
-        this.setState({firstInput: '2'});
-        this.setState({thirdInput: '2'});
+        this.setState({isSecondActive: !this.state.isSecondActive}, () => console.log(`Second: ${this.state.isSecondActive}`));
+        // this.setState(prevState => ({
+        //     isSecondActive: !prevState.isSecondActive
+        // }));
+        if (this.state.isSecondActive !== true) {
+            this.secondBlock.className = "blockContent-activeBlock";
+            this.firstBlockInput.disabled = true;
+            this.secondBlockInput.disabled = false;
+            this.thirdBlockInput.disabled = true;
+            this.setState({finalPrice: this.getInputValue(this.secondBlockInput)});
+            this.setState({firstInput: '2'});
+            this.setState({thirdInput: '2'});
+        } else {
+            this.secondBlock.className = "blockContent";
+            this.setState({finalPrice: '0'});
+            this.setState({secondInput: '2'});
+            this.firstBlockInput.disabled = true;
+            this.secondBlockInput.disabled = true;
+            this.thirdBlockInput.disabled = true;
+        }
+
     }
 
     thirdBlockActive() {
         this.firstBlock.className = "blockContent";
         this.secondBlock.className = "blockContent";
-        this.thirdBlock.className = "blockContent-activeBlock";
-        this.firstBlockInput.disabled = true;
-        this.secondBlockInput.disabled = true;
-        this.thirdBlockInput.disabled = false;
-        this.setState({finalPrice: this.getInputValue(this.thirdBlockInput)});
-        this.setState({firstInput: '2'});
-        this.setState({secondInput: '2'});
+        this.setState({isThirdActive: !this.state.isThirdActive}, () => console.log(`Third: ${this.state.isThirdActive}`));
+        // this.setState(prevState => ({
+        //     isThirdActive: !prevState.isThirdActive
+        // }));
+        if (this.state.isThirdActive !== true) {
+            this.thirdBlock.className = "blockContent-activeBlock";
+            this.firstBlockInput.disabled = true;
+            this.secondBlockInput.disabled = true;
+            this.thirdBlockInput.disabled = false;
+            this.setState({finalPrice: this.getInputValue(this.thirdBlockInput)});
+            this.setState({firstInput: '2'});
+            this.setState({secondInput: '2'});
+        } else {
+            this.thirdBlock.className = "blockContent";
+            this.setState({finalPrice: '0'});
+            this.setState({thirdInput: '2'});
+            this.firstBlockInput.disabled = true;
+            this.secondBlockInput.disabled = true;
+            this.thirdBlockInput.disabled = true;
+        }
+
     }
 
     componentDidMount() {

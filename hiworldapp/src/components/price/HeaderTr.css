@@ -1,0 +1,10 @@
+header{
+    padding: 100px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+div.block{
+    width: 30%;
+}
