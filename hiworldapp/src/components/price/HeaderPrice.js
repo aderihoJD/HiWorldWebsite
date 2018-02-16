@@ -8,7 +8,16 @@ class HeaderPrice extends React.Component {
     constructor(props) {
         super(props);
         console.log(props);
-        this.state = {firstInput: '2', secondInput: '2', thirdInput: '2', finalPrice: '', isFirstActive: false, isSecondActive: false, isThirdActive: false};
+        this.state = {
+            firstInput: '2',
+            secondInput: '2',
+            thirdInput: '2',
+            finalPrice: '',
+            isFirstActive: false,
+            isSecondActive: false,
+            isThirdActive: false,
+            isFourthActive: false
+        };
         this.firstBlockActive = this.firstBlockActive.bind(this);
         this.secondBlockActive = this.secondBlockActive.bind(this);
         this.thirdBlockActive = this.thirdBlockActive.bind(this);
@@ -16,6 +25,8 @@ class HeaderPrice extends React.Component {
         this.firstInputChange = this.firstInputChange.bind(this);
         this.secondInputChange = this.secondInputChange.bind(this);
         this.thirdInputChange = this.thirdInputChange.bind(this);
+        this.fourthBlockActive = this.fourthBlockActive.bind(this);
+        this.additionalBlocksShow = this.additionalBlocksShow.bind(this);
     }
 
     firstInputChange(value) {
@@ -50,7 +61,7 @@ class HeaderPrice extends React.Component {
             this.setState({thirdInput: '2'});
         } else {
             this.firstBlock.className = "blockContent";
-            this.setState({finalPrice: '0'});
+            this.setState({finalPrice: 0});
             this.setState({firstInput: '2'});
             this.firstBlockInput.disabled = true;
             this.secondBlockInput.disabled = true;
@@ -75,7 +86,7 @@ class HeaderPrice extends React.Component {
             this.setState({thirdInput: '2'});
         } else {
             this.secondBlock.className = "blockContent";
-            this.setState({finalPrice: '0'});
+            this.setState({finalPrice: 0});
             this.setState({secondInput: '2'});
             this.firstBlockInput.disabled = true;
             this.secondBlockInput.disabled = true;
@@ -101,7 +112,7 @@ class HeaderPrice extends React.Component {
             this.setState({secondInput: '2'});
         } else {
             this.thirdBlock.className = "blockContent";
-            this.setState({finalPrice: '0'});
+            this.setState({finalPrice: 0});
             this.setState({thirdInput: '2'});
             this.firstBlockInput.disabled = true;
             this.secondBlockInput.disabled = true;
@@ -110,10 +121,25 @@ class HeaderPrice extends React.Component {
 
     }
 
+    fourthBlockActive() {
+        this.setState({isFourthActive: !this.state.isFourthActive}, () => console.log(`Fourth: ${this.state.isFourthActive}`));
+        if (this.state.isFourthActive !== true) {
+            this.fourthBlock.className = "blockContent-activeBlock";
+            this.setState({finalPrice: this.state.finalPrice + 1000});
+        } else {
+            this.fourthBlock.className = "blockContent";
+            this.setState({finalPrice: this.state.finalPrice - 1000});
+        }
+
+    }
+
     componentDidMount() {
         this.secondBlockActive();
     }
 
+    additionalBlocksShow() {
+
+    }
 
     getInputValue(input) {
         const firstPrice = [100, 200, 300];
@@ -201,7 +227,35 @@ class HeaderPrice extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <p className={'additionalBlocks'}>Design Features</p>
+                    <p className={'additionalBlocks'} onClick={this.additionalBlocksShow}>Design Features</p>
+                    <div className={'designFeatures'}>
+                        <div className={"block block-first"}>
+                            <div className={"blockContent"} onClick={this.fourthBlockActive} ref = {(div) => {
+                                this.fourthBlock = div;
+                            }}>
+                                <img src={"price/LOGO.png"} alt={"android"}/>
+                                <div className={"blockText"}>
+                                    <p className={"fText"}>Logo Design</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={"block block-second"}>
+                            <div className={"blockContent"}>
+                                <img src={"price/BRANDING.png"} alt={"website"}/>
+                                <div className={"blockText"}>
+                                    <p className={"fText"}>Branding</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={"block block-third"}>
+                            <div className={"blockContent"}>
+                                <img src={"price/bcard.png"} alt={"card"}/>
+                                <div className={"blockText"}>
+                                    <p className={"fText"}>Business Card</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <p className={'finalPrice'}>$ {this.state.finalPrice}</p>
                 </div>
             </header>
