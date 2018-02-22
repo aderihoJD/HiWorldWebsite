@@ -172,6 +172,9 @@ class HeaderPrice extends React.Component {
     }
 
     additionalBlocksShow() {
+        this.headerBlock.className = "priceStyle-active";
+        this.addButton.className = "additionalBlocks-active";
+        this.designFeatures.className = "designFeatures-active";
 
     }
 
@@ -217,7 +220,9 @@ class HeaderPrice extends React.Component {
 
     render() {
         return (
-            <header className={"priceStyle"}>
+            <header className={"priceStyle"} ref={(header) => {
+                this.headerBlock = header;
+            }}>
                 <img src="images/logoP.png" alt={'logo'} className="logo"/>
                 <nav>
                     <ul>
@@ -291,8 +296,12 @@ class HeaderPrice extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <p className={'additionalBlocks'} onClick={this.additionalBlocksShow}>Design Features</p>
-                    <div className={'designFeatures'}>
+                    <p className={'additionalBlocks'} onClick={this.additionalBlocksShow} ref={(p) => {
+                        this.addButton = p;
+                    }}>Design Features</p>
+                    <div className={'designFeatures'} ref={(div) => {
+                        this.designFeatures = div;
+                    }}>
                         <div className={"block block-first"}>
                             <div className={"blockContent"} onClick={this.fourthBlockActive} ref={(div) => {
                                 this.fourthBlock = div;

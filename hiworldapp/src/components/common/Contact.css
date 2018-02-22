@@ -4,17 +4,20 @@ div#contactUs {
   background: #222222;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 div#contactUs p.contactTitle {
-  font-size: 40px;
+  font-size: 60px;
   color: white;
   text-align: center;
+  margin-top: 40px;
 }
 div#contactUs p.contactInfo {
+  font-size: 20px;
   color: white;
   text-align: center;
+  line-height: 30px;
 }
 div#contactUs #form {
   display: flex;
@@ -22,31 +25,34 @@ div#contactUs #form {
   justify-content: center;
   align-items: center;
   margin-top: 60px;
+  width: 37%;
 }
 div#contactUs input,
 div#contactUs textarea {
   border: none;
   color: white;
   background: #222222;
-  margin: 10px 0;
+  margin-bottom: 50px;
   border-bottom: 1px solid #4c4c4c;
-  width: 450px;
+  width: 98%;
   padding-top: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   outline: none;
   padding-left: 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 div#contactUs button {
-  border: none;
-  background: #3333CC;
-  color: white;
-  border-radius: 15px;
-  padding: 10px 40px;
-  width: 450px;
-  margin: 10px 0 60px 0;
-  font-size: 20px;
-  outline: none;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border: 1px solid #33c;
+  background: #33c;
+  padding: 35px;
+  border-radius: 50px;
+  width: 98%;
+  font-size: 25px;
+  margin-bottom: 70px;
 }
 div#contactUs button:hover {
   cursor: pointer;
