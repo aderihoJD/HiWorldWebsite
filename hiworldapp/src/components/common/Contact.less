@@ -51,8 +51,26 @@ div#contactUs{
     width: 98%;
     font-size: 25px;
     margin-bottom: 70px;
+    outline: none;
     &:hover{
       cursor: pointer;
+    }
+  }
+  div.successBlock{
+    display: none;
+    &-active{
+      font-size: 300px;
+      color: white;
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0,0,0, 0.4);
+    }
+    img{
+      text-align: center;
     }
   }
 }

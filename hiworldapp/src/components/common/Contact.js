@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import axios from 'axios';
 
 import './Contact.css';
@@ -17,9 +17,12 @@ class Contact extends React.Component{
         this.onPhoneChange = this.onPhoneChange.bind(this);
         this.onMessageChange = this.onMessageChange.bind(this);
         this.onSendingForm = this.onSendingForm.bind(this);
+        this.onSuccessSend = this.onSuccessSend.bind(this);
     }
 
-    onSendingForm() {
+    onSendingForm(e) {
+
+        e.preventDefault();
 
         const formContent = {
             "name": this.state.name,
@@ -30,10 +33,7 @@ class Contact extends React.Component{
 
         axios.post('http://localhost:3001/message', formContent)
             .then(res => {
-                this.setState({name: ''});
-                this.setState({email: ''});
-                this.setState({phone: ''});
-                this.setState({message: ''});
+                this.onSuccessSend();
             })
             .catch(err => {
                 console.log(`Error: ${err}`);
@@ -56,19 +56,43 @@ class Contact extends React.Component{
         this.setState({message: e.target.value});
     }
 
+    onSuccessSend(){
+        this.successBlock.className = "successBlock-active";
+        setTimeout(() => {
+            this.successBlock.className = "successBlock";
+            this.nameInput.value = '';
+            this.emailInput.value = '';
+            this.phoneInput.value = '';
+            this.messageInput.value = '';
+        }, 2000);
+    }
+
 
     render(){
         return (
             <div id={"contactUs"}>
                 <p className="contactTitle">Contact Us</p>
                 <p className="contactInfo">hi-world@gmail.com<br/>+972.53.923.6229</p>
-                <form id="form">
-                    <input type="text" id="name" placeholder="NAME" onChange={this.onNameChange}/>
-                    <input type="email" id="email" placeholder="EMAIL" onChange={this.onEmailChange}/>
-                    <input type="text" id="phone" placeholder="PHONE" onChange={this.onPhoneChange}/>
-                    <input type="text" id="message" placeholder="MESSAGE" onChange={this.onMessageChange}/>
+                <form id="form" method="post" autoComplete={"off"}>
+                    <input type="text" id="name" placeholder="NAME" onChange={this.onNameChange} ref={(input) => {
+                        this.nameInput = input;
+                    }}/>
+                    <input type="text" id="email" placeholder="EMAIL" onChange={this.onEmailChange} ref={(input) => {
+                        this.emailInput = input;
+                    }}/>
+                    <input type="text" id="phone" placeholder="PHONE" onChange={this.onPhoneChange} ref={(input) => {
+                        this.phoneInput = input;
+                    }}/>
+                    <input type="text" id="message" placeholder="MESSAGE" onChange={this.onMessageChange} ref={(input) => {
+                        this.messageInput = input;
+                    }}/>
                     <button type="submit" className="mb-4 btn btn-primary" onClick={this.onSendingForm}>Send</button>
                 </form>
+                <div className={"successBlock"} ref={(div) => {
+                    this.successBlock = div;
+                }}>
+                    <img src={"images/success.png"} alt={"success"}/>
+                </div>
             </div>
         )
     }
