@@ -1,6 +1,6 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
-import {HashLink} from 'react-router-hash-link';
+import {Link} from 'react-router-dom';
+
 
 import './HeaderPrice.css';
 
@@ -227,9 +227,9 @@ class HeaderPrice extends React.Component {
                 <nav>
                     <ul>
                         <li><Link to='/'>Work</Link></li>
-                        <li><HashLink to='/#services'>About</HashLink></li>
+                        <li><a href='/#service'>About</a></li>
                         <li><Link to='/price'>Price</Link></li>
-                        <li><HashLink to='/#contactUs'>Contact</HashLink></li>
+                        <li><a href='/#contact'>Contact</a></li>
                     </ul>
                 </nav>
                 <div className="content">

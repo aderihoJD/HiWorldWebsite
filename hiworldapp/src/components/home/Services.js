@@ -1,8 +1,12 @@
 import React from 'react';
+import ScrollableAnchor, {configureAnchors} from 'react-scrollable-anchor';
 
 import './Services.css';
 
-const Services = () => <div id={"services"}>
+configureAnchors({scrollDuration: 1000});
+
+const Services = () => <ScrollableAnchor id={'service'}>
+    <div id={"services"}>
     <p className="title">Our Services</p>
     <div className="content">
         <div className="blocksContainer">
@@ -20,6 +24,7 @@ const Services = () => <div id={"services"}>
             </div>
         </div>
     </div>
-</div>;
+</div>
+</ScrollableAnchor>;
 
 export default Services;
