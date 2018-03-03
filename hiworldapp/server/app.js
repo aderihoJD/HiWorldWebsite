@@ -1,12 +1,13 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
+import path from 'path';
 
 import sendMail from './mailer';
 
 const app = express();
 
-const port = 3001;
+const port = 8080;
 
 app.use(bodyParser.json());
 
@@ -22,9 +23,10 @@ app.use((req, res, next) => {
     next();
 });
 
-app.post('/call', (req, res) => {
-    console.log(req.body);
-    res.send('Yes');
+app.use(express.static(path.resolve(__dirname, '../build')));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../build', 'index.html'));
 });
 
 app.post('/message', sendMail);
