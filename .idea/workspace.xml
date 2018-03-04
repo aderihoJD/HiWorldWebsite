@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/hiworldapp/src/components/price/HeaderPrice.js" line="51" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b4ccdb24-b45c-4fcf-928c-312f32edf745" name="Default" comment="calculator created completely">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hiworldapp/server/app.js" afterPath="$PROJECT_DIR$/hiworldapp/server/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hiworldapp/src/components/price/HeaderPrice.js" afterPath="$PROJECT_DIR$/hiworldapp/src/components/price/HeaderPrice.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hiworldapp/src/components/price/HeaderPrice.less" afterPath="$PROJECT_DIR$/hiworldapp/src/components/price/HeaderPrice.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hiworldapp/src/components/price/PriceBlock.js" afterPath="$PROJECT_DIR$/hiworldapp/src/components/price/PriceBlock.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,46 +21,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HeaderPrice.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hiworldapp/src/components/price/HeaderPrice.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HeaderPrice.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HeaderPrice.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hiworldapp/src/components/price/HeaderPrice.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4176">
-              <caret line="236" column="120" lean-forward="false" selection-start-line="236" selection-start-column="120" selection-end-line="236" selection-end-column="120" />
+            <state relative-caret-position="-126">
+              <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+                <marker date="1520173972088" expanded="true" signature="1921:2022" ph="&lt;div/&gt;" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PriceBlock.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PriceBlock.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hiworldapp/src/components/price/PriceBlock.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+            <state relative-caret-position="-90">
+              <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PriceBlock.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hiworldapp/src/components/price/PriceBlock.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2430">
-              <caret line="135" column="5" lean-forward="false" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="5" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -119,8 +102,8 @@
         <option value="$PROJECT_DIR$/hiworldapp/src/components/error/HeaderError.js" />
         <option value="$PROJECT_DIR$/hiworldapp/server/app.js" />
         <option value="$PROJECT_DIR$/hiworldapp/Procfile" />
-        <option value="$PROJECT_DIR$/hiworldapp/src/components/price/HeaderPrice.less" />
         <option value="$PROJECT_DIR$/hiworldapp/src/components/price/PriceBlock.less" />
+        <option value="$PROJECT_DIR$/hiworldapp/src/components/price/HeaderPrice.less" />
         <option value="$PROJECT_DIR$/hiworldapp/src/components/price/HeaderPrice.js" />
         <option value="$PROJECT_DIR$/hiworldapp/src/components/price/PriceBlock.js" />
       </list>
@@ -157,54 +140,45 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="HiWorld" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HiWorld" type="462c0819:PsiDirectoryNode" />
+              <item name="HiWorldWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiWorldWebsite" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="HiWorld" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HiWorld" type="462c0819:PsiDirectoryNode" />
+              <item name="HiWorldWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiWorldWebsite" type="462c0819:PsiDirectoryNode" />
               <item name="hiworldapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="HiWorld" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HiWorld" type="462c0819:PsiDirectoryNode" />
-              <item name="hiworldapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HiWorld" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HiWorld" type="462c0819:PsiDirectoryNode" />
+              <item name="HiWorldWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiWorldWebsite" type="462c0819:PsiDirectoryNode" />
               <item name="hiworldapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="HiWorld" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HiWorld" type="462c0819:PsiDirectoryNode" />
+              <item name="HiWorldWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiWorldWebsite" type="462c0819:PsiDirectoryNode" />
               <item name="hiworldapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="price" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="HiWorld" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HiWorld" type="462c0819:PsiDirectoryNode" />
+              <item name="HiWorldWebsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiWorldWebsite" type="462c0819:PsiDirectoryNode" />
               <item name="hiworldapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="price" type="462c0819:PsiDirectoryNode" />
-              <item name="PriceBlock.less" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -279,6 +253,7 @@
       <workItem from="1519644089343" duration="3904000" />
       <workItem from="1519653583972" duration="12309000" />
       <workItem from="1520088282241" duration="175000" />
+      <workItem from="1520168304311" duration="5769000" />
     </task>
     <task id="LOCAL-00001" summary="init commit with new architecture">
       <created>1517502257948</created>
@@ -382,18 +357,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123875000" />
+    <option name="totallyTimeSpent" value="129644000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="27" width="1861" height="1055" extended-state="6" />
+    <frame x="67" y="27" width="1303" height="780" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21055496" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21048513" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3300866" sideWeight="0.510929" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30194804" sideWeight="0.48907104" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3007752" sideWeight="0.48907104" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -413,8 +389,8 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17640692" sideWeight="0.48907104" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20382513" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3007752" sideWeight="0.48907104" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21048513" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -553,16 +529,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hiworldapp/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="144">
-            <caret line="125" column="0" lean-forward="true" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/hiworldapp/README.md" />
     <entry file="file://$PROJECT_DIR$/hiworldapp/src/components/home/Home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -720,27 +687,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hiworldapp/build/service-worker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hiworldapp/build/static/js/main.92003e55.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23875">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hiworldapp/build/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/hiworldapp/build/service-worker.js" />
+    <entry file="file://$PROJECT_DIR$/hiworldapp/build/static/js/main.92003e55.js" />
+    <entry file="file://$PROJECT_DIR$/hiworldapp/build/index.html" />
     <entry file="file://$PROJECT_DIR$/hiworldapp/src/components/common/Contact.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -755,13 +704,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hiworldapp/Procfile.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="true" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/hiworldapp/Procfile.txt" />
     <entry file="file://$PROJECT_DIR$/hiworldapp/server/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
@@ -778,36 +721,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hiworldapp/src/components/price/HeaderPrice.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
+        <state relative-caret-position="361">
           <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1520168099328" expanded="true" signature="18:14549" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="83:1117" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="779:1117" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="1021:1117" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="11307:14237" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="11307:14241" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="11325:14231" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="11471:12707" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="11797:12412" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="12106:12122" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="12149:12400" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="12262:12312" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="12335:12385" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="12427:12441" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="12466:12696" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="12571:12617" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="12638:12684" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="12726:14223" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="12882:14213" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="13230:13891" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="13559:13577" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="13606:13877" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="13727:13781" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="13806:13860" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="13908:13924" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="13951:14201" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="14064:14114" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="14137:14187" ph="{...}" />
+            <marker date="1520168099328" expanded="true" signature="14257:14547" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hiworldapp/src/components/price/PriceBlock.less">
+    <entry file="file://$PROJECT_DIR$/hiworldapp/src/components/price/PriceBlock.less" />
+    <entry file="file://$PROJECT_DIR$/hiworldapp/src/components/price/PriceBlock.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2430">
-          <caret line="135" column="5" lean-forward="false" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hiworldapp/src/components/price/HeaderPrice.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4176">
-          <caret line="236" column="120" lean-forward="false" selection-start-line="236" selection-start-column="120" selection-end-line="236" selection-end-column="120" />
+        <state relative-caret-position="-90">
+          <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hiworldapp/src/components/price/PriceBlock.js">
+    <entry file="file://$PROJECT_DIR$/hiworldapp/src/components/price/HeaderPrice.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        <state relative-caret-position="-126">
+          <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+            <marker date="1520173972088" expanded="true" signature="1921:2022" ph="&lt;div/&gt;" />
           </folding>
         </state>
       </provider>
