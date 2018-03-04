@@ -5,9 +5,7 @@ import './PriceBlock.css';
 class PriceBlock extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            inputPreviousValue: '2',
-        };
+      
         this.onInputChange = this.onInputChange.bind(this);
         this.onBlockCLick = this.onBlockCLick.bind(this);
     }
