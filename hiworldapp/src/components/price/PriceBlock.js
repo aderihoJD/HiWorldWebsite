@@ -1,18 +1,14 @@
 import React from 'react';
 
+
+import InputCustom from './InputCustom';
 import './PriceBlock.css';
 
 class PriceBlock extends React.Component {
     constructor(props) {
         super(props);
-      
-        this.onInputChange = this.onInputChange.bind(this);
+
         this.onBlockCLick = this.onBlockCLick.bind(this);
-    }
-
-
-    onInputChange(e) {///wtf with this value???
-        console.log('e', e.target.value);
     }
 
     onBlockCLick() {
@@ -21,9 +17,12 @@ class PriceBlock extends React.Component {
         return onPriceBlockCLick(priceBlock);
     }
 
-
     render() {
-        const { priceBlock: { img, alt, text, defaultInputValue }, isActive } = this.props;
+        const {
+            priceBlock: { img, alt, text, defaultInputValue },
+            isActive,
+            onInputChange
+        } = this.props;
         const className = isActive ? "blockContent-activeBlock": "blockContent";
 
         return (
@@ -35,14 +34,10 @@ class PriceBlock extends React.Component {
                         <p className={"sText"}>Design & Development</p>
                     </div>
                 </div>
-                <input
-                    type={"range"}
-                    min={"1"}
-                    max={"3"}
-                    disabled={!isActive}
+                <InputCustom
+                    isActive={isActive}
                     defaultValue={defaultInputValue}
-                    step={"1"}
-                    onChange={(e) => {this.onInputChange(e)}}
+                    onInputChange={onInputChange}
                 />
                 <div className={"rangeLabels"}>
                     <p>Small</p>

@@ -1,8 +1,15 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+
 import PriceBlock from './PriceBlock';
 import './HeaderPrice.css';
+
+const PRICE = {
+    android: [100, 200, 300],
+    website: [400, 500, 600],
+    ios: [700, 800, 900]
+};
 
 const PRICE_BLOCKS = [
     {
@@ -29,15 +36,29 @@ class HeaderPrice extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            finalPrice: 0,
+            finalPrice: PRICE.website[1],
             activeBlock: PRICE_BLOCKS[1],
         };
 
+        this.onInputChange = this.onInputChange.bind(this);
         this.onPriceBlockCLick = this.onPriceBlockCLick.bind(this);
     }
 
     onPriceBlockCLick(priceBlock) {
-        this.setState({ activeBlock: priceBlock });
+        const {activeBlock} = this.state;
+
+        this.setState({
+            activeBlock: activeBlock !== priceBlock ? priceBlock: null,
+            finalPrice: PRICE[priceBlock.alt][1],
+        });
+    }
+
+    onInputChange(inputValue) {
+        const {activeBlock: {alt}} = this.state;
+
+        this.setState({
+            finalPrice: PRICE[alt][inputValue - 1]
+        });
     }
 
     render() {
@@ -46,6 +67,7 @@ class HeaderPrice extends React.Component {
             isActive={this.state.activeBlock === pb}
             priceBlock={pb}
             onPriceBlockCLick={this.onPriceBlockCLick}
+            onInputChange={this.onInputChange}
         />);
 
         return (
