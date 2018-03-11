@@ -21,7 +21,8 @@ class PriceBlock extends React.Component {
         const {
             priceBlock: { img, alt, text, defaultInputValue },
             isActive,
-            onInputChange
+            onInputChange,
+            hasInput
         } = this.props;
         const className = isActive ? "blockContent-activeBlock": "blockContent";
 
@@ -34,16 +35,13 @@ class PriceBlock extends React.Component {
                         <p className={"sText"}>Design & Development</p>
                     </div>
                 </div>
+                {hasInput &&
                 <InputCustom
                     isActive={isActive}
                     defaultValue={defaultInputValue}
                     onInputChange={onInputChange}
                 />
-                <div className={"rangeLabels"}>
-                    <p>Small</p>
-                    <p>Average<br/>Size of project</p>
-                    <p>Big</p>
-                </div>
+                }
             </div>)
     }
 }
