@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-
 import PriceBlock from './PriceBlock';
 import './HeaderPrice.css';
 
