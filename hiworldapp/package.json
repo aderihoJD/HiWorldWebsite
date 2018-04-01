@@ -25,7 +25,7 @@
   "scripts": {
     "start-server": "babel-node server/app.js",
     "build-css": "node-less-chokidar src/ -o src/",
-    "watch-css": "npm run build-css && node-less-chokidar src/ -o src/ --watch --recursive",
+    "watch-css": "npm run build-css && node-less-chokidar src/ -o src/ --watch --recursive src/ -x",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",

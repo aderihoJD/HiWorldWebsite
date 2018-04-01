@@ -52,3 +52,27 @@ div.info{
     }
   }
 }
+
+
+@media screen and (max-width: 500px){
+  div.info {
+
+  }
+  div.info div.infoText{
+    order: 2;
+  }
+  div.info div.imageBlock{
+    width: 100%;
+    order: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: cente
+  }
+  div.info div.imageBlock img.infoImage{
+    width: 90%;
+  }
+  div.info div.infoText div.addBlock p.titleInfo {
+    display: none;
+  }
+}

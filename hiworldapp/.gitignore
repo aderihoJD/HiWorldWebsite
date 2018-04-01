@@ -19,3 +19,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# compile after less (css, min.css)
+/src/components/*.css
+/src/components/*.min.css
