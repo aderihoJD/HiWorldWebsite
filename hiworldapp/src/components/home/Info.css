@@ -1,0 +1,92 @@
+div.info {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+div.info div.smallTitle {
+  display: none;
+  font-size: 40px;
+  margin-top: 30px;
+  color: grey;
+}
+div.info div.infoText {
+  width: 60%;
+  color: grey;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 250px;
+  flex: 1 1 250px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+  letter-spacing: 1px;
+}
+div.info div.infoText div.addBlock {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 57%;
+}
+div.info div.infoText div.addBlock p.titleInfo {
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+div.info div.infoText div.addBlock p.text {
+  font-size: 25px;
+  line-height: 35px;
+  text-align: justify;
+  margin-bottom: 100px;
+}
+div.info div.infoText div.addBlock a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: grey;
+  border: 1px solid grey;
+  padding: 25px;
+  border-radius: 40px;
+  width: 90%;
+  font-size: 25px;
+  text-align: center;
+}
+div.info div.imageBlock {
+  width: 45%;
+}
+div.info div.imageBlock img.infoImage {
+  width: 100%;
+}
+@media screen and (max-width: 500px) {
+  div.info div.smallTitle {
+    display: flex;
+    order: 1;
+  }
+  div.info div.infoText {
+    order: 3;
+  }
+  div.info div.imageBlock {
+    width: 100%;
+    order: 2;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: cente;
+  }
+  div.info div.imageBlock img.infoImage {
+    width: 90%;
+    height: 60%;
+  }
+  div.info div.infoText div.addBlock {
+    width: 85%;
+    margin-bottom: 50px;
+  }
+  div.info div.infoText div.addBlock p.titleInfo {
+    display: none;
+  }
+  div.info div.infoText div.addBlock p.text {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+}

@@ -72,11 +72,38 @@ div#contactUs{
     img{
       text-align: center;
     }
-  }
+    }
 }
 
 @media screen and (max-width: 500px){
-  div#contactUs {
-    display: none;
+  div#contactUs p.contactTitle {
+    margin-top: 0;
+  }
+  div#contactUs p.contactInfo {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+  }
+  div#contactUs form#form {
+    display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  width: 90%;
+  }
+  div#contactUs input, div#contactUs textarea {
+    border: none;
+  color: white;
+  background: #222222;
+  margin-bottom: 65px;
+  border-bottom: 1px solid #4c4c4c;
+  width: 98%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  outline: none;
+  padding-left: 10px;
+  font-size: 26px;
   }
 }

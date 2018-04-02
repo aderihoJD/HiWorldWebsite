@@ -3,6 +3,7 @@ import React from 'react';
 import './Info.css';
 
 const Info = () => <div className="info">
+    <div className="smallTitle">Lorem ipsum dolor</div>
     <div className="infoText">
         <div className={"addBlock"}>
             <p className="titleInfo">Lorem ipsum dolor</p>

@@ -5,6 +5,12 @@ div.info{
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  div.smallTitle{
+    display: none;
+    font-size: 40px;
+    margin-top: 30px;
+    color: grey;
+  }
   div.infoText{
     width: 60%;
     color: grey;
@@ -58,12 +64,16 @@ div.info{
   div.info {
 
   }
+  div.info div.smallTitle {
+    display: flex;
+    order: 1;
+  }
   div.info div.infoText{
-    order: 2;
+    order: 3;
   }
   div.info div.imageBlock{
     width: 100%;
-    order: 1;
+    order: 2;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
@@ -71,8 +81,17 @@ div.info{
   }
   div.info div.imageBlock img.infoImage{
     width: 90%;
+    height: 60%;
+  }
+  div.info div.infoText div.addBlock {
+    width: 85%;
+    margin-bottom: 50px;
   }
   div.info div.infoText div.addBlock p.titleInfo {
     display: none;
+  }
+  div.info div.infoText div.addBlock p.text {
+    text-align: center;
+    margin-bottom: 80px;
   }
 }
