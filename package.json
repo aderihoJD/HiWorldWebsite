@@ -23,7 +23,7 @@
     "reactstrap": "^5.0.0-beta.2"
   },
   "scripts": {
-    "start-server": "babel-node server/app.js",
+    "start-server": "npm-run-all -p watch-css start-js",
     "build-css": "node-less-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-less-chokidar src/ -o src/ --watch --recursive src/ -x",
     "start-js": "react-scripts start",
@@ -31,8 +31,8 @@
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "start-client": "npm-run-all -p watch-css start-js"
+    "eject": "react-scripts eject"
+    
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
