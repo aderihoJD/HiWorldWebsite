@@ -60,7 +60,8 @@ div#services div.content div.blocksContainer div.block p {
     align-items: center;
   }
   div#services p.title {
-    padding-top: 60px;
+    padding-top: 20px;
+    font-size: 50px;
   }
   div#services div.content {
     display: flex;
@@ -74,28 +75,65 @@ div#services div.content div.blocksContainer div.block p {
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-end;
-    margin-bottom: 65px;
+    margin-top: -45px;
   }
   div#services div.content div.blocksContainer div.block {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    margin: 100px 80px 0 80px;
+    margin: 50px 80px 9px 80px;
   }
   div#services div.content div.blocksContainer div.block img.picture-first {
-    width: 200px;
+    width: 180px;
   }
   div#services div.content div.blocksContainer div.block img.picture-second {
-    width: 170px;
+    width: 160px;
   }
   div#services div.content div.blocksContainer div.block img.picture-third {
-    width: 200px;
+    width: 180px;
   }
   div#services div.content div.blocksContainer div.block p {
     margin-bottom: 0;
-    margin-top: 20px;
+    margin-top: 10px;
     font-weight: 300;
     letter-spacing: 3px;
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 440px) {
+  div#services p.title {
+    padding-top: 20px;
+    font-size: 45px;
+  }
+  div#services div.content div.blocksContainer div.block img.picture-first {
+    width: 170px;
+  }
+  div#services div.content div.blocksContainer div.block img.picture-second {
+    width: 150px;
+  }
+  div#services div.content div.blocksContainer div.block img.picture-third {
+    width: 170px;
+  }
+  div#services div.content div.blocksContainer div.block p {
+    font-size: 22px;
+  }
+  div#services div.content div.blocksContainer div.block {
+    margin: 50px 50px 9px 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  div#services div.content div.blocksContainer div.block p {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 360px) {
+  div#services div.content div.blocksContainer div.block p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 340px) {
+  div#services div.content div.blocksContainer div.block {
+    margin: 50px 20px 9px 20px;
   }
 }
