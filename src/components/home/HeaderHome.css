@@ -76,6 +76,109 @@ header.indexStyle div.content img.arrow {
 header.indexStyle div.content img.arrow:hover {
   cursor: pointer;
 }
+@media screen and (max-width: 1650px) {
+  header.indexStyle div.content h1 {
+    font-size: 100px;
+  }
+}
+@media screen and (max-width: 1450px) {
+  header.indexStyle div.content h1 {
+    font-size: 95px;
+  }
+  header.indexStyle div.content a.contact {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 1350px) {
+  header.indexStyle div.content h1 {
+    font-size: 90px;
+  }
+  header.indexStyle div.content a.contact {
+    margin-bottom: 100px;
+  }
+  header.indexStyle div.content img.arrow {
+    margin-bottom: 150px;
+  }
+}
+@media screen and (max-width: 1110px) {
+  header.indexStyle div.content h1 {
+    font-size: 80px;
+  }
+  header.indexStyle div.content a.contact {
+    padding: 25px;
+  }
+  header.indexStyle div.content img.arrow {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 900px) {
+  header.indexStyle div.content h1 {
+    font-size: 70px;
+  }
+  header.indexStyle div.content a.contact {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 800px) {
+  header.indexStyle nav ul li a {
+    font-size: 18px;
+  }
+  header.indexStyle div.content h1 {
+    font-size: 65px;
+  }
+  header.indexStyle div.content p {
+    font-size: 23px;
+  }
+  header.indexStyle div.content a.contact {
+    padding: 23px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 750px) {
+  header.indexStyle nav ul li a {
+    font-size: 17px;
+  }
+  header.indexStyle div.content p {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 700px) {
+  header.indexStyle nav ul li {
+    margin: 0 20px;
+  }
+}
+@media screen and (max-width: 650px) {
+  header.indexStyle nav ul {
+    margin-right: 25px;
+  }
+  header.indexStyle div.content h1 {
+    font-size: 60px;
+  }
+  header.indexStyle div.content p {
+    font-size: 20px;
+  }
+  header.indexStyle div.content a.contact {
+    padding: 20px;
+  }
+  header.indexStyle div.content img.arrow {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header.indexStyle nav ul li {
+    margin: 0 12px;
+  }
+  header.indexStyle div.content h1 {
+    font-size: 55px;
+    letter-spacing: 7px;
+  }
+  header.indexStyle div.content p {
+    width: 80%;
+  }
+  header.indexStyle div.content a.contact {
+    width: 430px;
+  }
+}
 @media screen and (max-width: 500px) {
   header.indexStyle div.content h1 {
     font-size: 48px;

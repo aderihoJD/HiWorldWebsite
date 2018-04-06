@@ -34,6 +34,29 @@ footer div a {
 footer div a:hover {
   cursor: pointer;
 }
+@media screen and (max-width: 950px) {
+  footer {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 750px) {
+  footer nav ul li {
+    margin: 0 4px;
+  }
+}
+@media screen and (max-width: 700px) {
+  footer {
+    flex-flow: row wrap;
+    font-size: 22px;
+    height: 150px;
+  }
+  footer nav {
+    width: 100%;
+  }
+  footer nav ul li {
+    margin: 0 3px;
+  }
+}
 @media screen and (max-width: 500px) {
   footer {
     flex-flow: row wrap;

@@ -58,6 +58,67 @@ div.info div.imageBlock {
 div.info div.imageBlock img.infoImage {
   width: 100%;
 }
+@media screen and (max-width: 1650px) {
+  div.info div.infoText div.addBlock p.titleInfo {
+    font-size: 53px;
+  }
+  div.info div.imageBlock {
+    width: 43%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  div.info div.infoText div.addBlock p.titleInfo {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 900px) {
+  div.info div.infoText div.addBlock p.titleInfo {
+    font-size: 45px;
+  }
+  div.info div.infoText div.addBlock p.text {
+    font-size: 20px;
+    margin-bottom: 70px;
+  }
+  div.info div.imageBlock {
+    width: 50%;
+  }
+  div.info div.infoText div.addBlock {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 750px) {
+  div.info div.smallTitle {
+    display: flex;
+    order: 1;
+    font-size: 45px;
+  }
+  div.info div.infoText {
+    order: 3;
+  }
+  div.info div.imageBlock {
+    width: 100%;
+    order: 2;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  div.info div.imageBlock img.infoImage {
+    width: 70%;
+  }
+  div.info div.infoText div.addBlock p.titleInfo {
+    display: none;
+  }
+  div.info div.infoText div.addBlock p.text {
+    font-size: 25px;
+    margin-bottom: 70px;
+  }
+  div.info div.infoText div.addBlock {
+    width: 70%;
+    margin-bottom: 20px;
+    margin-top: -30px;
+  }
+}
 @media screen and (max-width: 500px) {
   div.info div.smallTitle {
     display: flex;
@@ -72,7 +133,7 @@ div.info div.imageBlock img.infoImage {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
-    align-items: cente;
+    align-items: center;
   }
   div.info div.imageBlock img.infoImage {
     width: 90%;

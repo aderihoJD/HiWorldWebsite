@@ -52,6 +52,112 @@ div#services div.content div.blocksContainer div.block p {
   margin-bottom: 255px;
   letter-spacing: 1px;
 }
+@media screen and (max-width: 1450px) {
+  div#services div.content div.blocksContainer div.block {
+    margin: 40px 80px 0 80px;
+  }
+}
+@media screen and (max-width: 1350px) {
+  div#services div.content div.blocksContainer div.block {
+    margin: 40px 70px 0 70px;
+  }
+  div#services div.content div.blocksContainer div.block img.picture-first {
+    width: 260px;
+  }
+  div#services div.content div.blocksContainer div.block img.picture-second {
+    width: 220px;
+  }
+  div#services div.content div.blocksContainer div.block img.picture-third {
+    width: 230px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  div#services div.content div.blocksContainer div.block {
+    margin: 0px 60px 0 60px;
+  }
+  div#services div.content div.blocksContainer div.block p {
+    margin-top: 65px;
+  }
+}
+@media screen and (max-width: 1110px) {
+  div#services div.content div.blocksContainer div.block {
+    margin: 0px 80px 0 80px;
+  }
+  div#services div.content div.blocksContainer div.block p {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 900px) {
+  div#services div.content div.blocksContainer div.block {
+    margin: 0px 70px 0 70px;
+  }
+  div#services div.content div.blocksContainer div.block img.picture-first {
+    width: 250px;
+  }
+  div#services div.content div.blocksContainer div.block img.picture-second {
+    width: 210px;
+  }
+  div#services div.content div.blocksContainer div.block img.picture-third {
+    width: 220px;
+  }
+}
+@media screen and (max-width: 800px) {
+  div#services div.content div.blocksContainer div.block {
+    margin: 0px 60px 0 60px;
+  }
+  div#services div.content div.blocksContainer div.block p {
+    margin-top: 45px;
+    font-size: 23px;
+  }
+  div#services div.content div.blocksContainer div.block {
+    margin: 0px 60px 0 60px;
+  }
+  div#services div.content div.blocksContainer div.block img.picture-first {
+    width: 240px;
+  }
+  div#services div.content div.blocksContainer div.block img.picture-second {
+    width: 200px;
+  }
+  div#services div.content div.blocksContainer div.block img.picture-third {
+    width: 210px;
+  }
+}
+@media screen and (max-width: 695px) {
+  div#services div.content div.blocksContainer div.block {
+    margin: 0px 65px 0 65px;
+  }
+  div#services p.title {
+    text-align: center;
+    color: #fff;
+    font-size: 55px;
+    padding-top: 40px;
+  }
+  div#services div.content div.blocksContainer div.block p {
+    margin-top: 15px;
+    font-size: 23px;
+    margin-bottom: 75px;
+  }
+  div#services div.content div.blocksContainer div.block img.picture-first {
+    width: 230px;
+  }
+  div#services div.content div.blocksContainer div.block img.picture-second {
+    width: 193px;
+  }
+  div#services div.content div.blocksContainer div.block img.picture-third {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  div#services div.content div.blocksContainer div.block img.picture-first {
+    width: 220px;
+  }
+  div#services div.content div.blocksContainer div.block img.picture-second {
+    width: 185px;
+  }
+  div#services div.content div.blocksContainer div.block img.picture-third {
+    width: 193px;
+  }
+}
 @media screen and (max-width: 500px) {
   div#services {
     display: flex;
