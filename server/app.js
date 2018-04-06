@@ -2,6 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import path from 'path';
+import favicon from 'serve-favicon';
 
 import sendMail from './mailer';
 
@@ -10,6 +11,8 @@ const app = express();
 const port = 8080;
 
 app.use(bodyParser.json());
+
+app.use(favicon(path.join(__dirname, '../public', 'favicon.ico')));
 
 app.use(cors({origin: '*'}));
 
@@ -32,4 +35,3 @@ app.get('*', (req, res) => {
 app.post('/message', sendMail);
 
 app.listen(port, () => console.log(`Server was started on port: ${port}`));
-
