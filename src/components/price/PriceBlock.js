@@ -19,7 +19,7 @@ class PriceBlock extends React.Component {
 
     render() {
         const {
-            priceBlock: { img, alt, text, defaultInputValue },
+            priceBlock: { img, alt, text, defaultInputValue, classImg },
             isActive,
             onInputChange,
             hasInput
@@ -29,7 +29,7 @@ class PriceBlock extends React.Component {
         return (
             <div className={"block"}>
                 <div className={className} onClick={this.onBlockCLick}>
-                    <img src={img} alt={alt}/>
+                    <img src={img} alt={alt} className={classImg}/>
                     <div className={"blockText"}>
                         <p className={"fText"}>{text}</p>
                         <p className={"sText"}>Design & Development</p>

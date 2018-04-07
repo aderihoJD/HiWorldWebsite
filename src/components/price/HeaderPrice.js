@@ -19,18 +19,21 @@ const PRICE_BLOCKS = [
         text: 'Android App',
         alt: 'android',
         defaultInputValue: '2',
+        classImg: 'firstImg',
     },
     {
         img: 'price/Web.png',
         text: 'Website',
         alt: 'website',
         defaultInputValue: '2',
+        classImg: 'secondImg',
     },
     {
         img: 'price/IOS.png',
         text: 'IOS App',
         alt: 'ios',
         defaultInputValue: '2',
+        classImg: 'thirdImg',
     },
 ];
 
@@ -39,16 +42,19 @@ const BLOCKS = [
         img: 'price/bcard.png',
         text: 'Business Card',
         alt: 'card',
+        classImg: 'fourthImg',
     },
     {
         img: 'price/BRANDING.png',
         text: 'Branding',
         alt: 'branding',
+        classImg: 'fifthImg',
     },
     {
         img: 'price/LOGO.png',
         text: 'Logo Design',
         alt: 'logo',
+        classImg: 'sixthImg',
     }
 ];
 
