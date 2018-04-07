@@ -124,6 +124,7 @@ div.info div.imageBlock img.infoImage {
   div.info div.smallTitle {
     display: flex;
     order: 1;
+    font-size: 40px;
   }
   div.info div.infoText {
     order: 3;
@@ -168,20 +169,33 @@ div.info div.imageBlock img.infoImage {
 }
 @media screen and (max-width: 485px) {
   div.info div.infoText div.addBlock p.text {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    font-size: 17px;
   }
   div.info div.imageBlock img.infoImage {
-    width: 85%;
+    width: 75%;
+  }
+  div.info div.smallTitle {
+    font-size: 36px;
+  }
+  div.info div.infoText div.addBlock {
+    margin-top: -40px;
+  }
+  div.info div.smallTitle {
+    margin-bottom: 35px;
   }
 }
 @media screen and (max-width: 360px) {
   div.info div.smallTitle {
-    font-size: 35px;
+    font-size: 32px;
   }
   div.info div.imageBlock img.infoImage {
-    width: 90%;
+    width: 80%;
   }
   div.info div.infoText div.addBlock p.text {
-    font-size: 20px;
+    font-size: 13px;
+  }
+  div.info div.infoText div.addBlock a {
+    padding: 11px;
   }
 }

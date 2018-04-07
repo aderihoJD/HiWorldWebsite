@@ -226,7 +226,11 @@ header.indexStyle div.content img.arrow:hover {
     line-height: 75px;
   }
   header.indexStyle div.content a.contact {
-    padding: 23px;
+    padding: 20px;
+  }
+  header.indexStyle div.content img.arrow {
+    margin-bottom: 70px;
+    width: 80px;
   }
 }
 @media screen and (max-width: 390px) {
@@ -249,7 +253,17 @@ header.indexStyle div.content img.arrow:hover {
 }
 @media screen and (max-width: 360px) {
   header.indexStyle div.content a.contact {
-    padding: 20px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  header.indexStyle img.logo {
+    width: 22px;
+  }
+  header.indexStyle div.content img.arrow {
+    margin-bottom: 80px;
+  }
+  header.indexStyle div.content p {
+    font-size: 17px;
   }
 }
 @media screen and (max-width: 345px) {

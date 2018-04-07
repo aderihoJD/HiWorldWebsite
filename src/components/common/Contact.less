@@ -112,14 +112,14 @@ div#contactUs{
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 40px;
   width: 90%;
   }
   div#contactUs input, div#contactUs textarea {
     border: none;
   color: white;
   background: #222222;
-  margin-bottom: 65px;
+  margin-bottom: 50px;
   border-bottom: 1px solid #4c4c4c;
   width: 98%;
   padding-top: 20px;
@@ -139,28 +139,33 @@ div#contactUs{
     border-radius: 50px;
     width: 98%;
     font-size: 25px;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     outline: none;
   }
 }
 
 @media screen and (max-width: 440px){
   div#contactUs p.contactTitle {
-    font-size: 45px;
+    font-size: 40px;
   }
   div#contactUs p.contactInfo {
-    font-size: 23px;
+    font-size: 20px;
+    line-height: 30px;
   }
   div#contactUs input, div#contactUs textarea {
     font-size: 19px;
+    padding-top: 10px;
   }
   div#contactUs button {
-    padding: 28px;
+    padding: 20px;
   }
 }
 
-@media screen and (max-width: 330px){
+@media screen and (max-width: 360px){
   div#contactUs button {
-    padding: 20px;
+    padding: 10px;
+  }
+  div#contactUs input, div#contactUs textarea {
+    margin-bottom: 35px;
   }
 }
