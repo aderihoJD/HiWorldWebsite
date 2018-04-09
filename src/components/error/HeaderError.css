@@ -91,7 +91,7 @@ header.errorStyle div.content div.imageContent img {
     margin-top: -100px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   header.errorStyle {
     height: calc(100vh - 150px);
   }
