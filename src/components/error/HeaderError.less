@@ -4,6 +4,7 @@ header.errorStyle {
   width: 100%;
   height: calc(~'100vh - 50px');
   overflow-y: hidden;
+  overflow-x: hidden;
   img.logo {
     position: absolute;
     width: 33px;
@@ -94,4 +95,45 @@ header.errorStyle {
   }
 }
 
-
+@media screen and (max-width: 400px) {
+    header.errorStyle {
+        height: calc(~'100vh - 150px');
+    }
+    header.errorStyle div.content div.textContent a.contact {
+      padding: 15px;
+      width: 300px;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+    header.errorStyle div.content div.textContent h1 {
+      font-size: 120px;
+      letter-spacing: 2px;
+    }
+    header.errorStyle div.content div.textContent p {
+      font-size: 40px;
+      margin-top: -40px;
+    }
+    header.errorStyle div.content div.imageContent img {
+      top: 10px;
+      left: 15%;
+      width: 100%;
+    }
+    header.errorStyle nav ul li.contErr {
+      display: none;
+    }
+    header.errorStyle nav ul li {
+      margin: 0 20px;
+    }
+    header.errorStyle nav ul li a {
+      font-size: 15px;
+    }
+    header.errorStyle nav ul {
+      margin-top: 30px;
+      margin-right: 5px;
+    }
+    header.errorStyle img.logo {
+      width: 28px;
+      top: 20px;
+      left: 30px;
+    }
+}

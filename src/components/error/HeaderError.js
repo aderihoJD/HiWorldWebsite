@@ -14,7 +14,7 @@ class HeaderHome extends React.Component {
                         <li><Link to='/'>Work</Link></li>
                         <li><a href='/#service'>About</a></li>
                         <li><Link to='/price'>Price</Link></li>
-                        <li><a href='/#contact'>Contact</a></li>
+                        <li className={"contErr"}><a href='/#contact'>Contact</a></li>
                     </ul>
                 </nav>
                 <div className="content">
