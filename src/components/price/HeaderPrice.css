@@ -2,6 +2,8 @@ header.priceStyle {
   background: white;
   width: 100%;
   height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 header.priceStyle-active {
   background: white;
@@ -408,4 +410,9 @@ header.priceStyle p.finalPrice {
   font-size: 60px;
   margin-bottom: 115px;
   letter-spacing: 2px;
+}
+@media screen and (max-width: 700px) {
+  header.priceStyle nav ul li.priceButton {
+    display: none;
+  }
 }

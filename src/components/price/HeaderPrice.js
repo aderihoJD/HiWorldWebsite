@@ -5,12 +5,12 @@ import PriceBlock from './PriceBlock';
 import './HeaderPrice.css';
 
 const PRICE = {
-    android: [100, 200, 300],
-    website: [400, 500, 600],
-    ios: [700, 800, 900],
-    card: 1,
-    branding: 2,
-    logo: 3,
+    android: [1000, 2000, 3500],
+    website: [1000, 3000, 5000],
+    ios: [1000, 2000, 3500],
+    card: 400,
+    branding: 500,
+    logo: 300,
 };
 
 const PRICE_BLOCKS = [
@@ -150,6 +150,14 @@ class HeaderPrice extends React.Component {
         </div>);
     }
 
+    componentDidMount(){
+      if (this._header.offsetWidth < 500) {
+        console.log(this._header.offsetWidth);
+        this.setState({isOpenBlock: true});
+        this.renderAdditionalBlock();
+      }
+    }
+
     render() {
         const { isOpenBlock } = this.state;
 
@@ -163,13 +171,13 @@ class HeaderPrice extends React.Component {
         />);
 
         return (
-            <header className={"priceStyle"}>
+            <header className={"priceStyle"} ref = {(header) => {this._header = header;}}>
                 <img src="images/logoP.png" alt={'logo'} className="logo"/>
                 <nav>
                     <ul>
                         <li><Link to='/'>Work</Link></li>
                         <li><a href='/#service'>About</a></li>
-                        <li><Link to='/price'>Price</Link></li>
+                        <li className={"priceButton"}><Link to='/price'>Price</Link></li>
                         <li><a href='/#contact'>Contact</a></li>
                     </ul>
                 </nav>
