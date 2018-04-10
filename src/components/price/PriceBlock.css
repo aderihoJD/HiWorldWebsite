@@ -206,7 +206,7 @@ div.block div.rangeLabels {
     padding-top: 0px ! important;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 720px) {
   header.priceStyle div.content h1 {
     font-size: 30px ! important;
   }
