@@ -206,7 +206,7 @@ div.block div.rangeLabels {
     padding-top: 0px ! important;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 420px) {
   header.priceStyle div.content h1 {
     font-size: 30px ! important;
   }
@@ -289,5 +289,37 @@ div.block div.rangeLabels {
   }
   header.priceStyle div.content div.wrapper {
     margin-top: -5px;
+  }
+}
+@media screen and (max-width: 350px) {
+  header.priceStyle div.content div.wrapper div.block div.blockContent {
+    width: 90px ! important;
+    height: 90px ! important;
+  }
+  header.priceStyle div.content div.wrapper div.block div.blockContent-activeBlock {
+    width: 90px ! important;
+    height: 90px ! important;
+  }
+  header.priceStyle div.content div.wrapper div.block input[type=range] {
+    width: 90px ! important;
+  }
+  header.priceStyle div.content div.wrapper div.block div.rangeLabels {
+    width: 90px ! important;
+  }
+  header.priceStyle p.finalPrice {
+    padding: 5px ! important;
+    font-size: 45px ! important;
+  }
+  header.priceStyle div.content div.wrapper div.block div.blockContent div.blockText p.fText {
+    font-size: 13px ! important;
+  }
+  header.priceStyle img.logo {
+    width: 28px ! important;
+  }
+  header.priceStyle nav ul li a {
+    font-size: 14px ! important;
+  }
+  header.priceStyle nav ul li {
+    margin: 0 14px ! important;
   }
 }
