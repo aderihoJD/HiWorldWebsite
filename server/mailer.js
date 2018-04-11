@@ -10,7 +10,7 @@ export default (req, res, next) => {
         to: 'hi.world.ltd@gmail.com',
         subject: 'Order',
         text: `
-        Name: ${req.body.name} \u000A 
+        Name: ${req.body.name} \u000A
         Email: ${req.body.email} \u000A
         Phone: ${req.body.phone} \u000A
         Message: ${req.body.message}`
@@ -19,7 +19,7 @@ export default (req, res, next) => {
     transporter.sendMail(mailOptions, (err, info) => {
        if (err) {
            console.log(err);
-           res.sendStatus(500).send('Something was bad');
+           res.status(500);
            return next(err);
        }
        console.log(`Message was sent: ${info.response}`);

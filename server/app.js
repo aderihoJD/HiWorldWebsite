@@ -45,4 +45,9 @@ app.post('/test', (req, res) => {
   res.status(200).send(`Everything ok`);
 });
 
+app.use((err, req, res, next) => {
+  res.statusCode = err.status || 500;
+  res.send({message: err.message, error: err});
+});
+
 app.listen(port, () => console.log(`Server was started on port: ${port}`));
