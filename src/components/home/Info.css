@@ -188,6 +188,7 @@ div.info div.imageBlock img.infoImage {
 @media screen and (max-width: 360px) {
   div.info div.smallTitle {
     font-size: 32px;
+    margin-top: 15px;
   }
   div.info div.imageBlock img.infoImage {
     width: 80%;

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 import './Info.css';
 
@@ -12,7 +13,7 @@ const Info = () => <div className="info">
                 Donec ultricies molestie finibus.
                 Cras sed diam turpis ullamcorper iaculis.
             </p>
-            <a href="/">view prices</a>
+            <Link to='/price'>view prices</Link>
         </div>
     </div>
     <div className="imageBlock">

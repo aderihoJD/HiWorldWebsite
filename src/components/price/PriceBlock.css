@@ -42,9 +42,6 @@ div.block div.blockContent-activeBlock div.blockText p.fText {
 div.block div.blockContent-activeBlock div.blockText p.sText {
   font-size: 18px;
 }
-div.block div.blockContent img.firstImg {
-  width: 100%;
-}
 div.block div.blockContent div.blockText {
   height: 70px;
   text-align: center;
@@ -293,8 +290,8 @@ div.block div.rangeLabels {
 }
 @media screen and (max-width: 350px) {
   header.priceStyle div.content div.wrapper div.block div.blockContent {
-    width: 90px ! important;
-    height: 90px ! important;
+    width: 95px ! important;
+    height: 95px ! important;
   }
   header.priceStyle div.content div.wrapper div.block div.blockContent-activeBlock {
     width: 90px ! important;
@@ -308,18 +305,33 @@ div.block div.rangeLabels {
   }
   header.priceStyle p.finalPrice {
     padding: 5px ! important;
-    font-size: 45px ! important;
+    font-size: 35px ! important;
   }
   header.priceStyle div.content div.wrapper div.block div.blockContent div.blockText p.fText {
     font-size: 13px ! important;
   }
   header.priceStyle img.logo {
-    width: 28px ! important;
+    width: 23px ! important;
   }
   header.priceStyle nav ul li a {
     font-size: 14px ! important;
   }
   header.priceStyle nav ul li {
     margin: 0 14px ! important;
+  }
+  header.priceStyle div.content div.wrapper div.block div.blockContent-activeBlock div.blockText {
+    margin-top: 0px ! important;
+  }
+  div.block div.blockContent-activeBlock img.secondImg {
+    width: 60% ! important;
+  }
+  header.priceStyle div.content div.wrapper div.block div.rangeLabels {
+    font-size: 9px ! important;
+  }
+  header.priceStyle div.content div.wrapper div.block div.blockContent-activeBlock div.blockText p.fText {
+    font-size: 13px ! important;
+  }
+  div.block div.blockContent img.fourthImg {
+    width: 65% ! important;
   }
 }
