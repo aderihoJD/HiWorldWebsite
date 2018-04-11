@@ -5,6 +5,7 @@
   "dependencies": {
     "axios": "^0.17.1",
     "body-parser": "^1.18.2",
+    "compression": "^1.7.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
     "history": "^4.7.2",
@@ -29,7 +30,7 @@
     "build-css": "node-less-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-less-chokidar src/ -o src/ --watch --recursive src/ -x",
     "start-js": "react-scripts start",
-    "start": "npm-run-all -p watch-css start-js",
+    "start": "babel-node server/app.js",
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
