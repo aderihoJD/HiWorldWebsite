@@ -4,7 +4,7 @@ export default (req, res, next) => {
 
     console.log('Mailer');
 
-    let transporter = nodemailer.createTransport('smtps://hi.world.ltd%40gmail.com:3841109done2018@smtp.gmail.com');
+    let transporter = nodemailer.createTransport('smtps://aderihoilya%40gmail.com:Aderihoilya1903@smtp.gmail.com');
 
     let mailOptions = {
         to: 'hi.world.ltd@gmail.com',
