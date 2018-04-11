@@ -7,7 +7,7 @@ export default (req, res, next) => {
     let transporter = nodemailer.createTransport('smtps://aderihoilya%40gmail.com:Aderihoilya1903@smtp.gmail.com');
 
     let mailOptions = {
-        to: 'hi.world.ltd@gmail.com',
+        to: 'aderihoilya@gmail.com',
         subject: 'Order',
         text: `
         Name: ${req.body.name} \u000A
