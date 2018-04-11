@@ -4,9 +4,19 @@ export default (req, res, next) => {
 
     console.log('Mailer');
 
-    let transporter = nodemailer.createTransport('smtps://aderihoilya%40gmail.com:Aderihoilya1903@smtp.gmail.com');
+    // let transporter = nodemailer.createTransport('smtps://aderihoilya%40gmail.com:Aderihoilya1903@smtp.gmail.com');
 
-    let mailOptions = {
+    const transporter = nodemailer.createTransport({
+        host: 'smtp.gmail.com',
+        port: 587,
+        secure: false,
+        auth: {
+          user: `aderihoilya`,
+          pass: `Aderihoilya1903`
+        }
+    });
+
+    const mailOptions = {
         to: 'aderihoilya@gmail.com',
         subject: 'Order',
         text: `
