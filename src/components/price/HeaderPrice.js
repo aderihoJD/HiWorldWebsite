@@ -152,7 +152,6 @@ class HeaderPrice extends React.Component {
 
     componentDidMount(){
       if (this._header.offsetWidth < 500) {
-        console.log(this._header.offsetWidth);
         this.setState({isOpenBlock: true});
         this.renderAdditionalBlock();
       }
