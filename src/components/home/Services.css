@@ -263,12 +263,15 @@ div#services div.content div.blocksContainer div.block p {
     margin: 15px 20px 9px 20px;
   }
   div#services div.content div.blocksContainer div.block img.picture-first {
-    width: 130px;
+    width: 120px;
   }
   div#services div.content div.blocksContainer div.block img.picture-second {
-    width: 110px;
+    width: 100px;
   }
   div#services div.content div.blocksContainer div.block img.picture-third {
-    width: 130px;
+    width: 120px;
+  }
+  div#services div.content div.blocksContainer div.block p {
+    margin-top: 5px ! important;
   }
 }
