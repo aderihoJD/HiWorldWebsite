@@ -34,7 +34,7 @@ class Contact extends React.Component {
             "message": this.state.message
         };
 
-        axios.post('http://localhost:3001/message', formContent)
+        axios.post('https://safe-caverns-88374.herokuapp.com/message', formContent)
             .then(res => {
                 this.onSuccessSend();
             })

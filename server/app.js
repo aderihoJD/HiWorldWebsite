@@ -41,4 +41,8 @@ app.get('*', (req, res) => {
 
 app.post('/message', sendMail);
 
+app.post('/test', (req, res) => {
+  res.status(200).send(`Everything ok`);
+});
+
 app.listen(port, () => console.log(`Server was started on port: ${port}`));
