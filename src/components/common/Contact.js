@@ -34,13 +34,25 @@ class Contact extends React.Component {
             "message": this.state.message
         };
 
-        axios.post('/message', formContent)
-            .then(res => {
-                this.onSuccessSend();
-            })
-            .catch(err => {
-                console.log(`Error: ${err}`);
-            });
+        axios({
+          method: 'post',
+          url: '/message',
+          data: formContent
+        })
+        .then(res => {
+            this.onSuccessSend();
+        })
+        .catch(err => {
+            console.log(`Error: ${err}`);
+        });
+
+        // axios.post({meth}, formContent)
+        //     .then(res => {
+        //         this.onSuccessSend();
+        //     })
+        //     .catch(err => {
+        //         console.log(`Error: ${err}`);
+        //     });
     }
 
     onNameChange(e) {
