@@ -75,10 +75,10 @@ div#contactUs div.successBlock-active {
 div#contactUs div.successBlock img {
   text-align: center;
 }
-div#contactUs div.successBlock div.errorBlock {
+div#contactUs div.errorBlock {
   display: none;
 }
-div#contactUs div.successBlock div.errorBlock-active {
+div#contactUs div.errorBlock-active {
   font-size: 150px;
   color: white;
   position: absolute;
@@ -89,7 +89,7 @@ div#contactUs div.successBlock div.errorBlock-active {
   align-items: center;
   background: rgba(0, 0, 0, 0.4);
 }
-div#contactUs div.successBlock div.errorBlock p {
+div#contactUs div.errorBlock p {
   text-align: center;
 }
 @media screen and (max-width: 1200px) {
