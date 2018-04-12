@@ -6,7 +6,7 @@ export default (req, res, next) => {
 
     // let transporter = nodemailer.createTransport('smtps://aderihoilya%40gmail.com:Aderihoilya1903@smtp.gmail.com');
 
-    const transporter = nodemailer.createTransport('smtps://hi.world.ltd%40gmail.com:3841109done2018@smtp.gmail.com');
+    const transporter = nodemailer.createTransport('smtps://aderihoilya%40gmail.com:Aderiho1@smtp.gmail.com');
 
     const mailOptions = {
         to: 'hi.world.ltd@gmail.com',
@@ -28,3 +28,7 @@ export default (req, res, next) => {
        res.sendStatus(200).send('Was send');
     });
 };
+
+
+// hi.world.ltd
+// 3841109done2018
