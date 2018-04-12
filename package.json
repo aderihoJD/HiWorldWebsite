@@ -23,7 +23,8 @@
     "react-scrollable-anchor": "^0.6.1",
     "reactstrap": "^5.0.0-beta.2",
     "serve-favicon": "^2.5.0",
-    "static-favicon": "^2.0.0-alpha"
+    "static-favicon": "^2.0.0-alpha",
+    "xoauth2": "^1.2.0"
   },
   "scripts": {
     "start-server": "babel-node server/app.js",

@@ -83,7 +83,7 @@
             this.phoneInput.value = '';
             this.messageInput.value = '';
             goToTop();
-          }, 30000);
+          }, 5000);
       }
 
       render() {
