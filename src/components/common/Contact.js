@@ -75,7 +75,7 @@ class Contact extends React.Component {
     }
 
     onErrorSend(err) {
-      this.setState = ({errorMessage: err});
+      this.setState({errorMessage: err});
       this.errorBlock.className = "errorBlock-active";
       setTimeout(() => {
         this.errorBlock.className = "errorBlock";
