@@ -13,7 +13,8 @@ class Contact extends React.Component {
             name: '',
             email: '',
             phone: '',
-            message: ''
+            message: '',
+            errorMessage: ''
         };
         this.onNameChange = this.onNameChange.bind(this);
         this.onEmailChange = this.onEmailChange.bind(this);
@@ -21,6 +22,7 @@ class Contact extends React.Component {
         this.onMessageChange = this.onMessageChange.bind(this);
         this.onSendingForm = this.onSendingForm.bind(this);
         this.onSuccessSend = this.onSuccessSend.bind(this);
+        this.onErrorSend = this.onErrorSend.bind(this);
     }
 
     onSendingForm(e) {
@@ -34,25 +36,14 @@ class Contact extends React.Component {
             "message": this.state.message
         };
 
-        axios({
-          method: 'post',
-          url: '/message',
-          data: formContent
-        })
-        .then(res => {
-            this.onSuccessSend();
-        })
-        .catch(err => {
-            console.log(`Error: ${err}`);
-        });
-
-        // axios.post({meth}, formContent)
-        //     .then(res => {
-        //         this.onSuccessSend();
-        //     })
-        //     .catch(err => {
-        //         console.log(`Error: ${err}`);
-        //     });
+        axios.post('/message', formContent)
+            .then(res => {
+                this.onSuccessSend();
+            })
+            .catch(err => {
+                this.onErrorSend(err);
+                console.log(`${err}`);
+            });
     }
 
     onNameChange(e) {
@@ -83,6 +74,18 @@ class Contact extends React.Component {
             }, 2000);
     }
 
+    onErrorSend(err) {
+      this.setState = ({errorMessage: err.message});
+      this.errorBlock.className = "errorBlock-active";
+      setTimeout(() => {
+        this.errorBlock.className = "errorBlock";
+        this.nameInput.value = '';
+        this.emailInput.value = '';
+        this.phoneInput.value = '';
+        this.messageInput.value = '';
+        goToTop();
+      }, 3000);
+    }
 
     render() {
         return (
@@ -94,7 +97,7 @@ class Contact extends React.Component {
                         <input type="text" id="name" placeholder="NAME" onChange={this.onNameChange} ref={(input) => {
                             this.nameInput = input;
                         }}/>
-                        <input type="text" id="email" placeholder="EMAIL" onChange={this.onEmailChange}
+                        <input type="text" id="email" placeholder="EMAIL" required onChange={this.onEmailChange}
                                ref={(input) => {
                                    this.emailInput = input;
                                }}/>
@@ -109,10 +112,15 @@ class Contact extends React.Component {
                         <button type="submit" className="mb-4 btn btn-primary" onClick={this.onSendingForm}>Send
                         </button>
                     </form>
-                    <div className={"successBlock"} ref={(div) => {
+                    <div className = {"successBlock"} ref = {(div) => {
                         this.successBlock = div;
                     }}>
                         <img src={"images/success.png"} alt={"success"}/>
+                    </div>
+                    <div className = {"errorBlock"} ref = {(div) => {
+                        this.errorBlock = div;
+                    }}>
+                      <p>{this.state.errorMessage}</p>
                     </div>
                 </div>
             </ScrollableAnchor>

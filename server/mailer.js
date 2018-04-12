@@ -12,10 +12,10 @@ export default (req, res, next) => {
         to: 'hi.world.ltd@gmail.com',
         subject: 'Order',
         text: `
-        Name: ${req.body.name} \u000A
-        Email: ${req.body.email} \u000A
-        Phone: ${req.body.phone} \u000A
-        Message: ${req.body.message}`
+        Name: ${req.body.name ? req.body.name : `No name`} \u000A
+        Email: ${req.body.email ? req.body.email : `No email`} \u000A
+        Phone: ${req.body.phone ? req.body.phone : `No phone`} \u000A
+        Message: ${req.body.message ? req.body.message : `No message`}`
     };
 
     transporter.sendMail(mailOptions, (err, info) => {
