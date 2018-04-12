@@ -290,8 +290,6 @@ div.block div.rangeLabels {
   header.priceStyle div.content div.wrapper {
     margin-top: -5px;
   }
-}
-@media screen and (max-width: 350px) {
   header.priceStyle div.content div.wrapper div.block div.blockContent {
     width: 95px ! important;
     height: 95px ! important;

@@ -244,26 +244,17 @@ div#services div.content div.blocksContainer div.block p {
 }
 @media screen and (max-width: 400px) {
   div#services div.content div.blocksContainer div.block p {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 360px) {
-  div#services div.content div.blocksContainer div.block p {
     font-size: 14px;
-  }
-  div#services div.content div.blocksContainer div.block img.picture-first {
-    padding-bottom: 5px;
   }
   div#services div.content div.blocksContainer {
     margin-top: -25px;
   }
-}
-@media screen and (max-width: 340px) {
   div#services div.content div.blocksContainer div.block {
     margin: 15px 20px 9px 20px;
   }
   div#services div.content div.blocksContainer div.block img.picture-first {
     width: 120px;
+    padding-bottom: 5px;
   }
   div#services div.content div.blocksContainer div.block img.picture-second {
     width: 100px;
