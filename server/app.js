@@ -40,11 +40,11 @@ app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, '../build', 'index.html'));
 });
 
-setInterval(request('https://safe-caverns-88374.herokuapp.com/images/logo.png', function (error, response, body) {
+setInterval(() => {request('https://safe-caverns-88374.herokuapp.com/images/logo.png', function (error, response, body) {
   console.log('error:', error); // Print the error if one occurred
   console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
   console.log('body:', body); // Print the HTML for the Google homepage.
-}), 30000);
+})}, 30000);
 
 app.post('/message', sendMail);
 
