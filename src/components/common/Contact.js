@@ -91,7 +91,7 @@
               <ScrollableAnchor id={'contact'}>
                   <div id={"contactUs"}>
                       <p className="contactTitle">Contact Us</p>
-                      <p className="contactInfo">hi-world@gmail.com<br/>+972.53.923.6229</p>
+                      <p className="contactInfo">hi.world.ltd@gmail.com<br/>+972.53.923.6229</p>
                       <form id="form" method="post" autoComplete={"off"}>
                           <input type="text" id="name" placeholder="NAME" onChange={this.onNameChange} ref={(input) => {
                               this.nameInput = input;

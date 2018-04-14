@@ -91,6 +91,79 @@ header.errorStyle div.content div.imageContent img {
     margin-top: -100px;
   }
 }
+@media screen and (max-width: 1100px) {
+  header.errorStyle div.content div.imageContent img {
+    left: 39%;
+  }
+}
+@media screen and (max-width: 800px) {
+  header.errorStyle div.content div.imageContent img {
+    left: 18%;
+  }
+  header.errorStyle div.content div.textContent h1 {
+    font-size: 200px;
+  }
+  header.errorStyle div.content div.textContent a.contact {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 690px) {
+  header.errorStyle div.content div.textContent h1 {
+    font-size: 170px;
+  }
+  header.errorStyle nav ul li a {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 635px) {
+  header.errorStyle div.content div.textContent p {
+    font-size: 45px;
+  }
+  header.errorStyle div.content div.textContent h1 {
+    font-size: 160px;
+  }
+  header.errorStyle div.content div.textContent a.contact {
+    width: 75%;
+  }
+  header.errorStyle div.content div.imageContent img {
+    left: 20%;
+    width: 85%;
+  }
+  header.errorStyle nav ul {
+    margin-right: 15px;
+  }
+  header.errorStyle nav ul li a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 540px) {
+  header.errorStyle nav ul li.contErr {
+    display: none;
+  }
+  header.errorStyle nav ul li a {
+    font-size: 17px;
+  }
+  header.errorStyle img.logo {
+    width: 28px;
+  }
+  header.errorStyle div.content div.textContent h1 {
+    font-size: 130px;
+  }
+  header.errorStyle div.content div.textContent a.contact {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 450px) {
+  header.errorStyle nav ul li a {
+    font-size: 16px;
+  }
+  header.errorStyle nav ul li {
+    margin: 0 20px;
+  }
+  header.errorStyle div.content div.textContent h1 {
+    font-size: 110px;
+  }
+}
 @media screen and (max-width: 420px) {
   header.errorStyle {
     height: calc(100vh - 150px);
@@ -114,9 +187,6 @@ header.errorStyle div.content div.imageContent img {
     left: 15%;
     width: 100%;
   }
-  header.errorStyle nav ul li.contErr {
-    display: none;
-  }
   header.errorStyle nav ul li {
     margin: 0 20px;
   }
@@ -131,5 +201,27 @@ header.errorStyle div.content div.imageContent img {
     width: 28px;
     top: 20px;
     left: 30px;
+  }
+}
+@media screen and (max-width: 370px) {
+  header.errorStyle div.content div.imageContent img {
+    width: 85%;
+  }
+  header.errorStyle div.content div.textContent h1 {
+    font-size: 90px;
+  }
+  header.errorStyle div.content div.textContent p {
+    font-size: 30px;
+    margin-top: -25px;
+  }
+  header.errorStyle div.content div.textContent a.contact {
+    width: 260px;
+    font-size: 17px;
+  }
+  header.errorStyle img.logo {
+    width: 25px;
+  }
+  header.errorStyle nav ul li {
+    margin: 0 15px;
   }
 }
