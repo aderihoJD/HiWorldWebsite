@@ -4,36 +4,30 @@ import {Link} from 'react-router-dom';
 import PriceBlock from './PriceBlock';
 import './HeaderPrice.css';
 
-const PRICE = {
-    android: [1000, 2000, 3500],
-    website: [1000, 3000, 5000],
-    ios: [1000, 2000, 3500],
-    card: 400,
-    branding: 500,
-    logo: 300,
-};
-
 const PRICE_BLOCKS = [
     {
         img: 'price/Android.png',
         text: 'Android App',
         alt: 'android',
-        defaultInputValue: '2',
         classImg: 'firstImg',
+        prices: [1000, 2000, 3500],
+        inputValue: '2',
     },
     {
         img: 'price/Web.png',
         text: 'Website',
         alt: 'website',
-        defaultInputValue: '2',
         classImg: 'secondImg',
+        prices: [1000, 3000, 5000],
+        inputValue: '2',
     },
     {
         img: 'price/IOS.png',
         text: 'IOS App',
         alt: 'ios',
-        defaultInputValue: '2',
         classImg: 'thirdImg',
+        prices: [1000, 2000, 3500],
+        inputValue: '2',
     },
 ];
 
@@ -43,18 +37,21 @@ const BLOCKS = [
         text: 'Business Card',
         alt: 'card',
         classImg: 'fourthImg',
+        price: 400,
     },
     {
         img: 'price/BRANDING.png',
         text: 'Branding',
         alt: 'branding',
         classImg: 'fifthImg',
+        price: 500,
     },
     {
         img: 'price/LOGO.png',
         text: 'Logo Design',
         alt: 'logo',
         classImg: 'sixthImg',
+        price: 300,
     }
 ];
 
@@ -62,71 +59,52 @@ class HeaderPrice extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            finalPrice: PRICE.website[1],
-            activePriceBlock: PRICE_BLOCKS[1],
             isOpenBlock: false,
-            activeBlocks: [],
+            priceBlocks: PRICE_BLOCKS,
+            activeBlocks: [PRICE_BLOCKS[1]],
         };
-
-        this.onBlockCLick = this.onBlockCLick.bind(this);
-        this.onInputChange = this.onInputChange.bind(this);
-        this.onPriceBlockCLick = this.onPriceBlockCLick.bind(this);
-
     }
 
-    onPriceBlockCLick(priceBlock) {
-        const {activePriceBlock} = this.state;
+    onBlockCLick = (block) => {
+        const { activeBlocks, priceBlocks } = this.state;
 
-        this.setState({
-            activePriceBlock: activePriceBlock !== priceBlock ? priceBlock: null,
-            finalPrice: this.getFinalPrice(priceBlock),
-        });
-
-        PRICE_BLOCKS.forEach((pb)=> {
-            pb.defaultInputValue = 2;
-        });
-    }
-
-    onBlockCLick(block) {
-       const {activeBlocks, finalPrice} = this.state;
-
-       if(this.checkBlock(block)) {
-           return this.setState({
-               activeBlocks: activeBlocks.filter((ab) => ab !== block),
-               finalPrice: finalPrice - PRICE[block.alt],
-           });
-       }
-
-       this.setState({
-           activeBlocks: activeBlocks.concat(block),
-           finalPrice: finalPrice + PRICE[block.alt]
-       });
-    }
-
-    onInputChange(inputValue) {
-        const {activePriceBlock} = this.state;
-
-        activePriceBlock.defaultInputValue = inputValue;
-
-        this.setState({
-            finalPrice: this.getFinalPrice(null, inputValue),
-        });
-    }
-
-    getFinalPrice(priceBlock, inputValue=2) {
-        const { activeBlocks, activePriceBlock } = this.state;
-        const cost = priceBlock ? priceBlock.alt: activePriceBlock.alt;
-
-        if(!activeBlocks.length) {
-            return activePriceBlock !== priceBlock ?
-                PRICE[cost][inputValue-1] : 0;
+        if (this.checkBlock(block)) {
+            return this.setState({
+                activeBlocks: activeBlocks.filter((ab) => ab !== block),
+                priceBlock: priceBlocks.map(pb => {
+                    if(pb === block) {
+                        pb.inputValue = "2";
+                    }
+                    return pb;
+                })
+            });
         }
 
+        return this.setState({
+            activeBlocks: activeBlocks.concat(block),
+        });
+    }
 
-        const priceByBlocks = activeBlocks.map((ab)=> PRICE[ab.alt])
-            .reduce((sum, current)=> sum + current, 0);
+    onInputChange = (priceBlock, inputValue) => {
+        const { priceBlocks } = this.state;
 
-        return priceByBlocks + (activePriceBlock !== priceBlock ? PRICE[cost][inputValue-1] : 0);
+        this.setState({
+            priceBlocks: priceBlocks.map(pb => {
+                if (pb === priceBlock) {
+                    pb.inputValue = inputValue;
+                }
+                return pb;
+            })
+        })
+    }
+
+    getFinalPrice() {
+        const {activeBlocks} = this.state;
+
+        return activeBlocks.reduce((result, currentItem)=> {
+            const price = currentItem.inputValue ? currentItem.prices[currentItem.inputValue-1] : currentItem.price;
+            return result + price;
+        }, 0);
     }
 
     checkBlock(block) {
@@ -158,14 +136,14 @@ class HeaderPrice extends React.Component {
     }
 
     render() {
-        const { isOpenBlock } = this.state;
+        const { isOpenBlock, priceBlocks } = this.state;
 
-        const priceBlocks = PRICE_BLOCKS.map((pb, index) => <PriceBlock
+        const pricesBlock = priceBlocks.map((pb, index) => <PriceBlock
             key={index}
-            isActive={this.state.activePriceBlock === pb}
+            isActive={this.checkBlock(pb)}
             priceBlock={pb}
-            onPriceBlockCLick={this.onPriceBlockCLick}
-            onInputChange={this.onInputChange}
+            onPriceBlockCLick={this.onBlockCLick}
+            onInputChange={(value)=>this.onInputChange(pb, value)}
             hasInput={true}
         />);
 
@@ -183,13 +161,13 @@ class HeaderPrice extends React.Component {
                 <div className="content">
                     <h1>Calculate Price</h1>
                     <div className={"wrapper"}>
-                        {priceBlocks}
+                        {pricesBlock}
                     </div>
                     {!isOpenBlock ?
                     <p className={'additionalBlocks'} onClick={()=> this.setState({isOpenBlock: true})}>Design Features</p> :
                     this.renderAdditionalBlock()
                     }
-                    <p className={'finalPrice'}>$ {this.state.finalPrice}</p>
+                    <p className={'finalPrice'}>$ {this.getFinalPrice()}</p>
                 </div>
             </header>
         )

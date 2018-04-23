@@ -19,7 +19,7 @@ class PriceBlock extends React.Component {
 
     render() {
         const {
-            priceBlock: { img, alt, text, defaultInputValue, classImg },
+            priceBlock: { img, alt, text, inputValue, classImg },
             isActive,
             onInputChange,
             hasInput
@@ -38,7 +38,7 @@ class PriceBlock extends React.Component {
                 {hasInput &&
                 <InputCustom
                     isActive={isActive}
-                    defaultValue={defaultInputValue}
+                    defaultValue={inputValue}
                     onInputChange={onInputChange}
                 />
                 }
