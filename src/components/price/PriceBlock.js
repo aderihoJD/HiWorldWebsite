@@ -2,7 +2,7 @@ import React from 'react';
 
 
 import InputCustom from './InputCustom';
-import './PriceBlock.css';
+
 
 class PriceBlock extends React.Component {
     constructor(props) {

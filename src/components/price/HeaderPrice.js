@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 
 import PriceBlock from './PriceBlock';
 import './HeaderPrice.css';
+import './PriceBlock.css';
 
 const PRICE_BLOCKS = [
     {
