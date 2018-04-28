@@ -5,7 +5,7 @@ header.priceStyle {
   overflow-x: hidden;
   overflow-y: hidden;
 }
-header.priceStyle img.logo {
+header.priceStyle a.logoLink img.logo {
   position: absolute;
   width: 33px;
   top: 41px;

@@ -150,7 +150,9 @@ class HeaderPrice extends React.Component {
 
         return (
             <header className={"priceStyle"} ref = {(header) => {this._header = header;}}>
-                <img src="images/logoP.png" alt={'logo'} className="logo"/>
+                <Link to = '/' className={"logoLink"}>
+                  <img src="images/logoP.png" alt={'logo'} className="logo"/>
+                </Link>
                 <nav>
                     <ul>
                         <li><Link to='/'>Work</Link></li>

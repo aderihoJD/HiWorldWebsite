@@ -10,7 +10,9 @@ class HeaderHome extends React.Component {
     render() {
         return (
             <header className={"indexStyle"}>
-                <img src="images/logo.png" alt={'logo'} className="logo"/>
+                <Link to = '/' className={"logoLink"}>
+                    <img src="images/logo.png" alt={'logo'} className="logo"/>
+                </Link>
                 <nav>
                     <ul>
                         <li><Link to='/'>Work</Link></li>
